@@ -48,7 +48,7 @@
 
 .qp-toolbar {
   display: flex;
-  gap: 5px;
+  gap: 7px;
   align-items: stretch;
   justify-content: space-between;
   flex: 0 0 auto;
@@ -59,37 +59,64 @@
   background: var(--qp-panel);
 }
 
-.qp-toolbar-main,
-.qp-toolbar-filters,
-.qp-toolbar-temporary {
-  display: flex;
-  gap: 5px;
+.qp-toolbar-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 8px;
   align-items: center;
   min-width: 0;
   width: 100%;
 }
 
-.qp-toolbar-main {
-  flex: 1;
+.qp-toolbar-primary,
+.qp-toolbar-view {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+}
+
+.qp-toolbar-view {
+  justify-content: flex-end;
+}
+
+.qp-toolbar-config {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 8px;
+  align-items: start;
+  min-width: 0;
+  width: 100%;
 }
 
 .qp-toolbar-filters {
+  display: flex;
   flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: flex-start;
   align-content: flex-start;
-  overflow-x: hidden;
-  overflow-y: auto;
+  min-width: 0;
+  width: auto;
+  overflow: visible;
   scrollbar-width: thin;
 }
 
 .qp-toolbar-temporary {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  width: auto;
   min-height: 22px;
+  border-left: 1px solid var(--qp-line);
+  padding-left: 8px;
 }
 
-.qp-toolbar-spacer {
-  flex: 1;
-}
-
-.qp-toolbar-main .bp6-input-group {
+.qp-toolbar-primary .bp6-input-group {
+  flex: 1 1 220px;
+  min-width: 180px;
   width: min(360px, 42vw);
 }
 
@@ -946,9 +973,30 @@
 }
 
 @media (max-width: 900px) {
-  .qp-toolbar-main .bp6-input-group {
-    flex: 1;
+  .qp-toolbar-main {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .qp-toolbar-primary .bp6-input-group {
+    flex: 1 1 180px;
     width: auto;
+  }
+
+  .qp-toolbar-view {
+    justify-content: flex-start;
+  }
+
+  .qp-toolbar-config {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .qp-toolbar-temporary {
+    border-top: 1px solid var(--qp-line);
+    border-left: 0;
+    padding-top: 5px;
+    padding-left: 0;
   }
 
   .qp-advanced-search {

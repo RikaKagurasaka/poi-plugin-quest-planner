@@ -182,11 +182,11 @@ function questMatchesSearch(quest, query) {
 }
 const REPEAT_LABELS = {
   single: '单次',
-  daily: '每日',
-  weekly: '每周',
-  monthly: '每月',
-  quarterly: '每季',
-  yearly: '每年',
+  daily: '日常',
+  weekly: '周常',
+  monthly: '月常',
+  quarterly: '季常',
+  yearly: '年常',
   unknown: '未分类',
 }
 const REWARD_KIND_LABELS = {
@@ -232,18 +232,18 @@ function rewardEntryText(entry) {
 }
 const REPEAT_FILTER_OPTIONS = [
   ['single', '单次'],
-  ['daily', '每日'],
-  ['weekly', '每周'],
-  ['monthly', '每月'],
-  ['quarterly', '每季'],
-  ['yearly', '每年'],
+  ['daily', '日常'],
+  ['weekly', '周常'],
+  ['monthly', '月常'],
+  ['quarterly', '季常'],
+  ['yearly', '年常'],
   ['unknown', '未分类'],
 ]
 const TEMPORARY_COMPLETION_OPTIONS = [
-  ['daily', '日'],
-  ['weekly', '周'],
-  ['monthly', '月'],
-  ['quarterly', '季'],
+  ['daily', '日常'],
+  ['weekly', '周常'],
+  ['monthly', '月常'],
+  ['quarterly', '季常'],
 ]
 const ADVANCED_SEARCH_FIELDS = [
   ['name', '任务名'],
@@ -265,7 +265,7 @@ const PREREQUISITE_FILTER_OPTIONS = [
 ]
 const FILTER_INFO = {
   prerequisite: '按前提组筛选：无前提单独归类；达成 B 表示 A、B 均已达成，达成 C 表示 A、B、C 均已达成。',
-  temporary: '将选中的日、周、月、季任务暂时视为已完成，仅用于推算后续任务状态，不会修改游戏记录。',
+  temporary: '将选中的日常、周常、月常、季常任务暂时视为已完成，仅用于推算后续任务状态，不会修改游戏记录。',
 }
 const DEFAULT_PREREQUISITE_FILTER = 'all'
 const DEFAULT_UI_CONFIG = {
@@ -1485,47 +1485,50 @@ function QuestPlanner() {
       'div',
       { className: 'qp-toolbar' },
       h('div', { className: 'qp-toolbar-main' },
-        advancedSearch
-          ? null
-          : h(InputGroup, {
-            leftIcon: 'search',
-            placeholder: '搜索',
-            value: query,
-            onChange: (event) => setQuery(event.target.value),
+        h('div', { className: 'qp-toolbar-primary' },
+          advancedSearch
+            ? null
+            : h(InputGroup, {
+              leftIcon: 'search',
+              placeholder: '搜索',
+              value: query,
+              onChange: (event) => setQuery(event.target.value),
+            }),
+          h(Button, { small: true, icon: 'star', className: `qp-filter-button${todoOnly ? ' is-active' : ''}`, onClick: () => setTodoOnly((value) => !value) }, '待做'),
+          h(Button, {
+            small: true,
+            icon: hiddenModalOpen ? 'eye-open' : 'eye-off',
+            title: '管理隐藏任务',
+            className: `qp-filter-button${hiddenModalOpen || directHiddenIds.size ? ' is-active' : ''}`,
+            onClick: () => setHiddenModalOpen(true),
+          }, '隐藏'),
+          h('span', { className: 'qp-count' }, quests.length),
+        ),
+        h('div', { className: 'qp-toolbar-view' },
+          h(Button, {
+            small: true,
+            icon: 'search-template',
+            className: `qp-filter-button${advancedSearch ? ' is-active' : ''}`,
+            onClick: () => setAdvancedSearch((value) => !value),
+          }, '高级'),
+          h(Button, {
+            small: true,
+            icon: 'properties',
+            className: `qp-filter-button${detailedStatuses ? ' is-active' : ''}`,
+            onClick: () => setDetailedStatuses((value) => !value),
+          }, '细分'),
+          h(HTMLSelect, {
+            minimal: true,
+            value: direction,
+            options: [{ value: 'LR', label: '横向图' }, { value: 'TB', label: '纵向图' }],
+            onChange: (event) => setDirection(event.target.value),
           }),
-        h(Button, { small: true, icon: 'star', className: `qp-filter-button${todoOnly ? ' is-active' : ''}`, onClick: () => setTodoOnly((value) => !value) }, '待做'),
-        h(Button, {
-          small: true,
-          icon: hiddenModalOpen ? 'eye-open' : 'eye-off',
-          title: '管理隐藏任务',
-          className: `qp-filter-button${hiddenModalOpen || directHiddenIds.size ? ' is-active' : ''}`,
-          onClick: () => setHiddenModalOpen(true),
-        }, '隐藏'),
-        h('span', { className: 'qp-count' }, quests.length),
-        h('span', { className: 'qp-toolbar-spacer' }),
-        h(Button, {
-          small: true,
-          icon: 'search-template',
-          className: `qp-filter-button${advancedSearch ? ' is-active' : ''}`,
-          onClick: () => setAdvancedSearch((value) => !value),
-        }, '高级'),
-        h(Button, {
-          small: true,
-          icon: 'properties',
-          className: `qp-filter-button${detailedStatuses ? ' is-active' : ''}`,
-          onClick: () => setDetailedStatuses((value) => !value),
-        }, '细分'),
-        h(HTMLSelect, {
-          minimal: true,
-          value: direction,
-          options: [{ value: 'LR', label: '横向图' }, { value: 'TB', label: '纵向图' }],
-          onChange: (event) => setDirection(event.target.value),
-        }),
-        h(Button, { minimal: true, icon: 'zoom-to-fit', title: '适合窗口', onClick: () => graphApi.current?.fit() }),
-        h(Button, { minimal: true, icon: 'locate', title: '定位任务', onClick: () => graphApi.current?.center() }),
-        filtersChanged
-          ? h(Button, { minimal: true, icon: 'filter-remove', title: '重置筛选', onClick: () => { setQuery(''); setAdvancedSearch(false); setAdvancedQueries({ ...DEFAULT_ADVANCED_QUERIES }); setStatusFilters([...DEFAULT_STATUS_FILTERS]); setCategoryFilters([...DEFAULT_CATEGORY_FILTERS]); setRepeatFilters([...DEFAULT_REPEAT_FILTERS]); setPrerequisiteFilter(DEFAULT_PREREQUISITE_FILTER); setTodoOnly(false) } })
-          : null,
+          h(Button, { minimal: true, icon: 'zoom-to-fit', title: '适合窗口', onClick: () => graphApi.current?.fit() }),
+          h(Button, { minimal: true, icon: 'locate', title: '定位任务', onClick: () => graphApi.current?.center() }),
+          filtersChanged
+            ? h(Button, { minimal: true, icon: 'filter-remove', title: '重置筛选', onClick: () => { setQuery(''); setAdvancedSearch(false); setAdvancedQueries({ ...DEFAULT_ADVANCED_QUERIES }); setStatusFilters([...DEFAULT_STATUS_FILTERS]); setCategoryFilters([...DEFAULT_CATEGORY_FILTERS]); setRepeatFilters([...DEFAULT_REPEAT_FILTERS]); setPrerequisiteFilter(DEFAULT_PREREQUISITE_FILTER); setTodoOnly(false) } })
+            : null,
+        ),
       ),
       advancedSearch
         ? h('div', { className: 'qp-advanced-search' }, ...ADVANCED_SEARCH_FIELDS.map(([field, label]) => h(InputGroup, {
@@ -1537,53 +1540,55 @@ function QuestPlanner() {
           onChange: (event) => setAdvancedQueries((current) => ({ ...current, [field]: event.target.value })),
         })))
         : null,
-      h('div', { className: 'qp-toolbar-filters' },
-        h(FilterBadges, {
-          label: '类型',
-          options: CATEGORY_FILTER_OPTIONS,
-          values: categoryFilters,
-          onToggle: (value, exclusive) => setCategoryFilters((current) => exclusive
-            ? exclusiveOrAll(current, [value], DEFAULT_CATEGORY_FILTERS)
-            : toggleSelection(current, value)),
-          classNameFor: (value) => `qp-category-${value}`,
-        }),
-        h(FilterBadges, {
-          label: '完成度',
-          options: detailedStatuses ? STATUS_FILTER_OPTIONS : COARSE_STATUS_FILTER_OPTIONS,
-          values: detailedStatuses ? statusFilters : coarseStatusValues,
-          partialValues: detailedStatuses ? [] : partialCoarseStatusValues,
-          onToggle: toggleStatusFilter,
-          iconFor: (value) => STATUS_ICONS[value],
-          classNameFor: (value) => `qp-state-${value}`,
-        }),
-        h(FilterBadges, {
-          label: '周期',
-          options: REPEAT_FILTER_OPTIONS,
-          values: repeatFilters,
-          onToggle: (value, exclusive) => setRepeatFilters((current) => exclusive
-            ? exclusiveOrAll(current, [value], DEFAULT_REPEAT_FILTERS)
-            : toggleSelection(current, value)),
-        }),
-        h(FilterBadges, {
-          label: '前提',
-          info: FILTER_INFO.prerequisite,
-          options: PREREQUISITE_FILTER_OPTIONS,
-          values: [prerequisiteFilter],
-          onToggle: (value) => setPrerequisiteFilter(value),
-          classNameFor: (value) => `qp-prerequisite-${value}`,
-        }),
-      ),
-      h('div', { className: 'qp-toolbar-temporary' },
-        h(FilterBadges, {
-          label: '暂定完成',
-          info: FILTER_INFO.temporary,
-          options: TEMPORARY_COMPLETION_OPTIONS,
-          values: temporaryCompletedRepeats,
-          onToggle: (value, exclusive) => setTemporaryCompletedRepeats((current) => exclusive
-            ? exclusiveOrAll(current, [value], TEMPORARY_COMPLETION_OPTIONS.map(([repeat]) => repeat))
-            : toggleSelection(current, value)),
-          classNameFor: (value) => `qp-temporary-${value}`,
-        }),
+      h('div', { className: 'qp-toolbar-config' },
+        h('div', { className: 'qp-toolbar-filters' },
+          h(FilterBadges, {
+            label: '类型',
+            options: CATEGORY_FILTER_OPTIONS,
+            values: categoryFilters,
+            onToggle: (value, exclusive) => setCategoryFilters((current) => exclusive
+              ? exclusiveOrAll(current, [value], DEFAULT_CATEGORY_FILTERS)
+              : toggleSelection(current, value)),
+            classNameFor: (value) => `qp-category-${value}`,
+          }),
+          h(FilterBadges, {
+            label: '完成度',
+            options: detailedStatuses ? STATUS_FILTER_OPTIONS : COARSE_STATUS_FILTER_OPTIONS,
+            values: detailedStatuses ? statusFilters : coarseStatusValues,
+            partialValues: detailedStatuses ? [] : partialCoarseStatusValues,
+            onToggle: toggleStatusFilter,
+            iconFor: (value) => STATUS_ICONS[value],
+            classNameFor: (value) => `qp-state-${value}`,
+          }),
+          h(FilterBadges, {
+            label: '周期',
+            options: REPEAT_FILTER_OPTIONS,
+            values: repeatFilters,
+            onToggle: (value, exclusive) => setRepeatFilters((current) => exclusive
+              ? exclusiveOrAll(current, [value], DEFAULT_REPEAT_FILTERS)
+              : toggleSelection(current, value)),
+          }),
+          h(FilterBadges, {
+            label: '前提',
+            info: FILTER_INFO.prerequisite,
+            options: PREREQUISITE_FILTER_OPTIONS,
+            values: [prerequisiteFilter],
+            onToggle: (value) => setPrerequisiteFilter(value),
+            classNameFor: (value) => `qp-prerequisite-${value}`,
+          }),
+        ),
+        h('div', { className: 'qp-toolbar-temporary' },
+          h(FilterBadges, {
+            label: '暂定完成',
+            info: FILTER_INFO.temporary,
+            options: TEMPORARY_COMPLETION_OPTIONS,
+            values: temporaryCompletedRepeats,
+            onToggle: (value, exclusive) => setTemporaryCompletedRepeats((current) => exclusive
+              ? exclusiveOrAll(current, [value], TEMPORARY_COMPLETION_OPTIONS.map(([repeat]) => repeat))
+              : toggleSelection(current, value)),
+            classNameFor: (value) => `qp-temporary-${value}`,
+          }),
+        ),
       ),
     ),
     h(HiddenQuestDialog, {

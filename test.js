@@ -1018,6 +1018,7 @@ assert.deepStrictEqual(plugin.__test.exclusiveOrAll(['daily', 'weekly'], ['daily
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('all', { hasPrerequisites: false, fulfilledGroups: 0 }), true)
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('none', { hasPrerequisites: false, fulfilledGroups: 0 }), true)
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('3', { hasPrerequisites: false, fulfilledGroups: 0 }), false)
+assert.strictEqual(plugin.__test.prerequisiteFilterMatches('3', { hasPrerequisites: false, fulfilledGroups: 3 }), false)
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('0', { hasPrerequisites: true, fulfilledGroups: 0 }), true)
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('1', { hasPrerequisites: true, fulfilledGroups: 3 }), true)
 assert.strictEqual(plugin.__test.prerequisiteFilterMatches('2', { hasPrerequisites: true, fulfilledGroups: 3 }), true)

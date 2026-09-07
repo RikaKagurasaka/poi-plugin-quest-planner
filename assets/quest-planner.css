@@ -144,6 +144,31 @@
   font-size: 11px;
 }
 
+.qp-filter-label-info {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+  margin-right: 2px;
+  color: var(--qp-muted);
+  cursor: help;
+  font-size: 11px;
+}
+
+.qp-filter-label-info .bp6-icon {
+  color: #a9b2bf;
+}
+
+.qp-setting-popover .bp6-popover-content {
+  max-width: min(340px, 64vw);
+  padding: 8px 9px;
+  color: var(--qp-text);
+  background: #242830;
+}
+
+.qp-setting-info {
+  line-height: 1.45;
+}
+
 .qp-filter-badge.bp6-button {
   min-height: 22px;
   border: 1px solid #414750;
@@ -708,10 +733,6 @@
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-
-.qp-feasibility-ready { color: #63c89a; }
-.qp-feasibility-blocked { color: #f29d9d; }
-.qp-feasibility-unknown { color: var(--qp-muted); }
 
 .qp-quest-popover .bp6-popover-content {
   max-width: min(440px, 48vw);

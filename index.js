@@ -8,14 +8,12 @@ const cytoscape = require('cytoscape')
 const dagre = require('cytoscape-dagre')
 const { store } = require('views/create-store')
 const questData = require('./data/quests.json')
-const { evaluateQuestRequirements } = require('./domain')
 const { buildRequirementSections, prerequisiteProgress } = require('./requirements-view')
 const {
   CATEGORY_LABELS,
   booleanQueryMatches,
   buildIndexes,
   completionIsCurrent,
-  evaluateFeasibility,
   findConcurrentQuestRecommendations,
   findConcurrentQuestRecommendationsByProgress,
   findConcurrentQuestRecommendationsForObjective,
@@ -59,11 +57,6 @@ const CATEGORY_COLORS = {
   factory: '#bd876b',
   modernization: '#b586d9',
   other: '#87909c',
-}
-const FEASIBILITY_LABELS = {
-  ready: '条件满足',
-  blocked: '条件不足',
-  unknown: '条件未知',
 }
 const REQUIREMENT_STATUS = {
   ready: { icon: 'tick', label: '已满足' },
@@ -125,10 +118,12 @@ function graphNodeLabel(code, status) {
 
 function prerequisiteFilterMatches(filter, progress) {
   if (filter === 'all') return true
-  if (filter === 'none') return !progress.hasPrerequisites
-  if (!progress.hasPrerequisites) return false
+  const hasPrerequisites = progress?.hasPrerequisites === true
+  if (filter === 'none') return !hasPrerequisites
+  if (!hasPrerequisites) return false
+  const fulfilledGroups = Math.max(0, Math.min(3, number(progress.fulfilledGroups)))
   const required = number(filter)
-  return required === 0 ? progress.fulfilledGroups === 0 : progress.fulfilledGroups >= required
+  return required === 0 ? fulfilledGroups === 0 : fulfilledGroups >= required
 }
 
 function withTemporaryRepeatCompletions(quests, state, repeats, at = Date.now()) {
@@ -263,11 +258,15 @@ const DEFAULT_REPEAT_FILTERS = REPEAT_FILTER_OPTIONS.map(([value]) => value)
 const PREREQUISITE_FILTER_OPTIONS = [
   ['all', '全部'],
   ['none', '无前提'],
-  ['0', '0组'],
-  ['1', '1组'],
-  ['2', '2组'],
-  ['3', '3组'],
+  ['0', '未达成'],
+  ['1', '达成 A'],
+  ['2', '达成 B'],
+  ['3', '达成 C'],
 ]
+const FILTER_INFO = {
+  prerequisite: '按前提组筛选：无前提单独归类；达成 B 表示 A、B 均已达成，达成 C 表示 A、B、C 均已达成。',
+  temporary: '将选中的日、周、月、季任务暂时视为已完成，仅用于推算后续任务状态，不会修改游戏记录。',
+}
 const DEFAULT_PREREQUISITE_FILTER = 'all'
 const DEFAULT_UI_CONFIG = {
   query: '',
@@ -567,11 +566,35 @@ function exclusiveOrAll(current, target, all) {
   return sameSelection(current, target) ? [...all] : [...target]
 }
 
-function FilterBadges({ label, options, values, partialValues = [], onToggle, classNameFor, iconFor }) {
+function FilterInfoPopover({ label, info }) {
+  const target = h(
+    'span',
+    { className: 'qp-filter-label-info', title: info },
+    label,
+    h(Icon, { icon: 'info-sign', size: 11 }),
+  )
+  if (typeof Popover !== 'function') return target
+  return h(
+    Popover,
+    {
+      content: h('div', { className: 'qp-setting-info' }, info),
+      interactionKind: 'hover-target',
+      placement: 'top-start',
+      hoverOpenDelay: 120,
+      hoverCloseDelay: 100,
+      minimal: true,
+      targetTagName: 'span',
+      popoverClassName: 'qp-setting-popover',
+    },
+    target,
+  )
+}
+
+function FilterBadges({ label, info, options, values, partialValues = [], onToggle, classNameFor, iconFor }) {
   return h(
     'div',
     { className: 'qp-filter-group' },
-    h('span', { className: 'qp-filter-label' }, label),
+    info ? h(FilterInfoPopover, { label, info }) : h('span', { className: 'qp-filter-label' }, label),
     ...options.map(([value, text]) => h(Button, {
       key: value,
       small: true,
@@ -1204,7 +1227,7 @@ function HiddenQuestDialog({ isOpen, hiddenIds, onToggle, onClose }) {
   )
 }
 
-function Detail({ quest, status, statuses, detailedStatuses, feasibility, requirementSections, rootState, catalogs, hiddenIds, onSelect }) {
+function Detail({ quest, status, statuses, detailedStatuses, requirementSections, rootState, catalogs, hiddenIds, onSelect }) {
   if (!quest) return h('section', { className: 'qp-detail' })
   const todo = Boolean(plannerState.todo?.[quest.id])
   const manualCompleted = Boolean(plannerState.manualCompleted?.[quest.id])
@@ -1243,7 +1266,6 @@ function Detail({ quest, status, statuses, detailedStatuses, feasibility, requir
       ),
       h(Tag, { minimal: true, className: `qp-category-tag qp-category-${quest.category}` }, CATEGORY_LABELS[quest.category] || CATEGORY_LABELS.other),
       h(Tag, { minimal: true }, REPEAT_LABELS[quest.repeat] || REPEAT_LABELS.unknown),
-      h(Tag, { minimal: true, className: `qp-feasibility qp-feasibility-${feasibility.status}` }, FEASIBILITY_LABELS[feasibility.status]),
     ),
     h(
       'div',
@@ -1412,9 +1434,6 @@ function QuestPlanner() {
     },
     [selected?.id, statuses, questData.catalogs, hiddenIds],
   )
-  const feasibility = selected?.requirements
-    ? evaluateQuestRequirements(selected.requirements, state, questData.catalogs)
-    : evaluateFeasibility(questGoal, state)
   const requirementSections = selected
     ? buildRequirementSections({
         quest: selected,
@@ -1547,6 +1566,7 @@ function QuestPlanner() {
         }),
         h(FilterBadges, {
           label: '前提',
+          info: FILTER_INFO.prerequisite,
           options: PREREQUISITE_FILTER_OPTIONS,
           values: [prerequisiteFilter],
           onToggle: (value) => setPrerequisiteFilter(value),
@@ -1556,6 +1576,7 @@ function QuestPlanner() {
       h('div', { className: 'qp-toolbar-temporary' },
         h(FilterBadges, {
           label: '暂定完成',
+          info: FILTER_INFO.temporary,
           options: TEMPORARY_COMPLETION_OPTIONS,
           values: temporaryCompletedRepeats,
           onToggle: (value, exclusive) => setTemporaryCompletedRepeats((current) => exclusive
@@ -1601,7 +1622,6 @@ function QuestPlanner() {
         status: selected ? statuses.get(selected.id)?.status || 'unknown' : 'unknown',
         statuses,
         detailedStatuses,
-        feasibility,
         requirementSections,
         rootState: state,
         catalogs: questData.catalogs,

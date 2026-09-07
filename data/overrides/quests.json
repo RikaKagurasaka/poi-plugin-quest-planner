@@ -1,0 +1,2630 @@
+{
+  "schemaVersion": 1,
+  "quests": [
+    {
+      "id": 320,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewardOverrides": {
+        "removeEntryIds": ["reward-kcwiki-1"],
+        "unresolved": []
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 157,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewardOverrides": {
+        "removeEntryIds": ["reward-kcwiki-2"],
+        "additionalEntries": [{
+          "id": "reward-wiki-fixed-furniture-box-large",
+          "kind": "use-item",
+          "useItemId": 12,
+          "quantity": 1,
+          "label": "家具箱（大）",
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/編成任務#id-A55",
+            "raw": "家具箱（大）x1"
+          }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 326,
+      "code": "Cs7",
+      "rewardText": "奖励:以下奖励二选一： 间宫×1 开发资材×8 以下奖励三选一： 礼物箱×1 应急修理要员×1 大发动艇×1",
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewardOverrides": {
+        "removeEntryIds": ["reward-kcwiki-1", "reward-kcwiki-2"],
+        "additionalEntries": [
+          {
+            "id": "reward-wiki-choice-1-mamiya", "kind": "use-item", "useItemId": 54, "quantity": 1,
+            "label": "給糧艦「間宮」", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "給糧艦「間宮」x1" }]
+          },
+          {
+            "id": "reward-wiki-choice-1-development-material", "kind": "use-item", "useItemId": 3, "quantity": 8,
+            "label": "開発資材", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "開発資材x8" }]
+          },
+          {
+            "id": "reward-wiki-choice-2-present-box", "kind": "use-item", "useItemId": 60, "quantity": 1,
+            "label": "プレゼント箱", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "プレゼント箱x1" }]
+          },
+          {
+            "id": "reward-wiki-choice-2-repair-personnel", "kind": "equipment", "equipmentId": 42, "quantity": 1,
+            "label": "応急修理要員", "improvement": null, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "応急修理要員x1" }]
+          },
+          {
+            "id": "reward-wiki-choice-2-daihatsu", "kind": "equipment", "equipmentId": 68, "quantity": 1,
+            "label": "大発動艇", "improvement": null, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "大発動艇x1" }]
+          }
+        ],
+        "additionalChoices": [
+          {
+            "id": "choice-wiki-current-1", "choose": 1,
+            "entryIds": ["reward-wiki-choice-1-mamiya", "reward-wiki-choice-1-development-material"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "選択報酬1" }]
+          },
+          {
+            "id": "choice-wiki-current-2", "choose": 1,
+            "entryIds": ["reward-wiki-choice-2-present-box", "reward-wiki-choice-2-repair-personnel", "reward-wiki-choice-2-daihatsu"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-Cs7", "raw": "選択報酬2" }]
+          }
+        ],
+        "unresolved": []
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 328,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewardOverrides": {
+        "additionalEntries": [{
+          "id": "reward-wiki-fixed-mamiya",
+          "kind": "use-item",
+          "useItemId": 54,
+          "quantity": 1,
+          "label": "給糧艦「間宮」",
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C27",
+            "raw": "給糧艦「間宮」x1"
+          }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 864,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewards": {
+        "choices": [
+          {
+            "id": "choice-2", "choose": 1, "entryIds": ["reward-kcwiki-4", "reward-kcwiki-5"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B105", "raw": "TBF / 夜間作戦航空要員" }]
+          },
+          {
+            "id": "choice-1", "choose": 1, "entryIds": ["reward-kcwiki-1", "reward-kcwiki-2", "reward-kcwiki-3"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B105", "raw": "F6F-3 / 熟練搭乗員 / 新型航空兵装資材" }]
+          }
+        ]
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 892,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "kcwiki quest data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "rewards": {
+        "choices": [
+          {
+            "id": "choice-2", "choose": 1, "entryIds": ["reward-kcwiki-4", "reward-kcwiki-5"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B126", "raw": "熟練搭乗員 / 改修資材x4" }]
+          },
+          {
+            "id": "choice-1", "choose": 1, "entryIds": ["reward-kcwiki-1", "reward-kcwiki-2", "reward-kcwiki-3"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B126", "raw": "新型砲熕兵装資材 / 新型航空兵装資材 / 大発動艇" }]
+          }
+        ]
+      },
+      "confidence": { "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 197,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "masterIds": [542] }, "min": 1 },
+              { "selector": { "masterIds": [563] }, "min": 1 },
+              { "selector": { "masterIds": [564] }, "min": 1 },
+              { "selector": { "masterIds": [648] }, "min": 1 }
+            ],
+            "forbidden": [],
+            "size": { "min": 4, "max": 4 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [
+            {
+              "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+              "field": "任務/フロントページ#A93",
+              "raw": "夕雲改二、巻雲改二、風雲改二、秋雲改二のみの4隻編成"
+            }
+          ]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 198,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "familyIds": [93], "remodel": { "minimumStage": 1 } }, "min": 1 },
+              { "selector": { "familyIds": [94], "remodel": { "minimumStage": 1 } }, "min": 1 },
+              { "selector": { "familyIds": [15], "remodel": { "minimumStage": 1 } }, "min": 1 },
+              { "selector": { "familyIds": [16], "remodel": { "minimumStage": 1 } }, "min": 1 }
+            ],
+            "forbidden": [],
+            "size": { "min": 4, "max": 4 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [
+            {
+              "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+              "field": "任務/フロントページ#A94",
+              "raw": "朧改、漣改、曙改、潮改の4隻編成。曙と潮は改二以降も可"
+            }
+          ]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 199,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              {
+                "selector": { "familyIds": [1041, 1044, 642, 994, 992, 993, 16, 35] },
+                "min": 5,
+                "distinctBy": "family"
+              }
+            ],
+            "forbidden": [],
+            "size": { "min": 5, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [
+            {
+              "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+              "field": "任務/フロントページ#2606A1",
+              "raw": "花月、桐、竹、榧、杉、樫、潮、響から5隻以上を編成"
+            }
+          ]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 343,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "typeIds": [11] } }],
+            "groups": [
+              { "selector": { "typeIds": [11] }, "min": 1 },
+              { "selector": { "typeIds": [2] }, "min": 2 }
+            ],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C46",
+            "raw": "旗艦正規空母、随伴正規空母1隻、駆逐艦2隻以上。本日中に演習B勝利以上4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "rewards": {
+        "entries": [
+          {
+            "id": "reward-resource-ammo", "kind": "resource", "resource": "ammo", "quantity": 800,
+            "label": "弹药", "confidence": "exact",
+            "sourceRefs": [{ "source": "Kcanotify game data", "field": "resources.ammo" }]
+          },
+          {
+            "id": "reward-resource-bauxite", "kind": "resource", "resource": "bauxite", "quantity": 800,
+            "label": "铝土", "confidence": "exact",
+            "sourceRefs": [{ "source": "Kcanotify game data", "field": "resources.bauxite" }]
+          },
+          {
+            "id": "reward-wiki-1", "kind": "use-item", "useItemId": 77, "quantity": 1,
+            "label": "新型航空兵装資材", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C46", "raw": "選択報酬: 新型航空兵装資材x1" }]
+          },
+          {
+            "id": "reward-wiki-2", "kind": "use-item", "useItemId": 70, "quantity": 1,
+            "label": "熟練搭乗員", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C46", "raw": "選択報酬: 熟練搭乗員x1" }]
+          },
+          {
+            "id": "reward-wiki-fixed-1", "kind": "furniture", "quantity": 1,
+            "label": "「加賀岬」掛け軸", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C46", "raw": "確定報酬: 家具「加賀岬」掛け軸x1" }]
+          }
+        ],
+        "choices": [{
+          "id": "choice-wiki-1", "choose": 1, "entryIds": ["reward-wiki-1", "reward-wiki-2"],
+          "valid": true, "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C46" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 344,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [{
+              "selector": { "familyIds": [65, 64, 471] },
+              "min": 2,
+              "distinctBy": "family"
+            }],
+            "forbidden": [],
+            "size": { "min": 2, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C48",
+            "raw": "羽黒、足柄、神風から2隻以上。本日中に演習A勝利以上4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 347,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "familyIds": [20] } }],
+            "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C51",
+            "raw": "雪風を旗艦とし駆逐艦合計4隻以上。本日中に演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 351,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "masterIds": [501, 506] } }],
+            "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C56",
+            "raw": "最上改二または最上改二特を旗艦、駆逐艦3隻以上。本日中に演習A勝利以上4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 352,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "masterIds": [663, 668] } }],
+            "groups": [{ "selector": { "typeIds": [2] }, "min": 4 }],
+            "forbidden": [],
+            "size": { "min": 5, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C57",
+            "raw": "矢矧改二または矢矧改二乙を旗艦、駆逐艦4隻以上。本日中に演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "rewards": {
+        "entries": [
+          {
+            "id": "reward-resource-fuel", "kind": "resource", "resource": "fuel", "quantity": 480,
+            "label": "燃料", "confidence": "exact",
+            "sourceRefs": [{ "source": "Kcanotify game data", "field": "resources.fuel" }]
+          },
+          {
+            "id": "reward-resource-steel", "kind": "resource", "resource": "steel", "quantity": 480,
+            "label": "钢材", "confidence": "exact",
+            "sourceRefs": [{ "source": "Kcanotify game data", "field": "resources.steel" }]
+          },
+          {
+            "id": "reward-wiki-fixed-1", "kind": "equipment", "equipmentId": 407, "quantity": 1,
+            "improvement": null, "label": "15.2cm連装砲改二", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C57", "raw": "確定報酬: 15.2cm連装砲改二x1" }]
+          },
+          {
+            "id": "reward-wiki-1", "kind": "equipment", "equipmentId": 40, "quantity": 2,
+            "improvement": null, "label": "25mm三連装機銃", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C57", "raw": "選択報酬: 25mm三連装機銃x2" }]
+          },
+          {
+            "id": "reward-wiki-2", "kind": "use-item", "useItemId": 94, "quantity": 1,
+            "label": "新型兵装資材", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C57", "raw": "選択報酬: 新型兵装資材x1" }]
+          },
+          {
+            "id": "reward-wiki-3", "kind": "furniture", "quantity": 1,
+            "label": "萩の床", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C57", "raw": "選択報酬: 家具「萩の床」" }]
+          }
+        ],
+        "choices": [{
+          "id": "choice-wiki-1", "choose": 1,
+          "entryIds": ["reward-wiki-1", "reward-wiki-2", "reward-wiki-3"],
+          "valid": true, "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/演習任務#id-C57" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 355,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [
+              { "role": "flagship", "selector": { "masterIds": [568, 670] } },
+              { "role": "second", "selector": { "masterIds": [568, 670] } }
+            ],
+            "groups": [], "forbidden": [], "size": { "min": 2, "max": 6 }, "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "poi", "field": "quest_goal.355.practice_win_s",
+            "raw": "黒潮改二/親潮改二を旗艦と二番艦に配置し、演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 356,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet", "positions": [],
+            "groups": [
+              { "selector": { "masterIds": [666] }, "min": 1 },
+              { "selector": { "masterIds": [647] }, "min": 1 },
+              { "selector": { "masterIds": [195] }, "min": 1 },
+              { "selector": { "masterIds": [627] }, "min": 1 }
+            ],
+            "forbidden": [], "size": { "min": 4, "max": 6 }, "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "poi", "field": "quest_goal.356.practice_win_s",
+            "raw": "磯波改二、浦波改二、綾波改二、敷波改二を含む艦隊で演習S勝利3回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 358,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "familyIds": [561] }, "min": 1 },
+              { "selector": { "familyIds": [562] }, "min": 1 },
+              { "selector": { "familyIds": [544] }, "min": 1 }
+            ],
+            "forbidden": [],
+            "size": { "min": 3, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C68",
+            "raw": "Samuel B.Roberts、Johnston、Gambier Bayを含む。本日中に演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 360,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "masterIds": [894, 899] } }],
+            "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C70",
+            "raw": "鳳翔改二または鳳翔改二戦を旗艦、駆逐艦3隻以上。本日中に演習S勝利5回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 364,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "masterIds": [593, 954] }, "min": 1 },
+              { "selector": { "masterIds": [591] }, "min": 1 },
+              { "selector": { "typeIds": [2] }, "min": 2 }
+            ],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C73",
+            "raw": "榛名改二乙または丙、金剛改二丙、駆逐艦2隻以上。本日中に演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 365,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "familyIds": [43] }, "min": 1 },
+              { "selector": { "familyIds": [42, 632, 633] }, "min": 1, "distinctBy": "family" }
+            ],
+            "forbidden": [],
+            "size": { "min": 2, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C75",
+            "raw": "時雨と白露、有明、夕暮から1隻以上。本日中に演習S勝利5回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 366,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [{ "role": "flagship", "selector": { "masterIds": [961] } }],
+            "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C76",
+            "raw": "時雨改三を旗艦、駆逐艦3隻以上。本日中に演習S勝利4回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 376,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "masterIds": [150, 592] }, "min": 1 },
+              { "selector": { "masterIds": [152, 694] }, "min": 1 },
+              { "selector": { "typeIds": [3] }, "min": 1 },
+              { "selector": { "typeIds": [2] }, "min": 2 }
+            ],
+            "forbidden": [],
+            "size": { "min": 5, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-C77",
+            "raw": "比叡改二または丙、霧島改二または丙、軽巡1隻、駆逐艦2隻以上。本日中に演習S勝利5回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 313,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all",
+          "children": [],
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-Cs1",
+            "raw": "同日中の演習で8回以上勝利。艦隊編成条件なし"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 314,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all",
+          "children": [],
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-Cs2",
+            "raw": "同日中の演習で8回以上勝利。艦隊編成条件なし"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 382,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "prerequisites": [199, 216],
+      "unresolvedPrerequisites": [],
+      "dependencies": {
+        "questIds": [199, 216],
+        "unresolved": [],
+        "confidence": "verified",
+        "sourceRefs": [{
+          "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+          "field": "任務/新着任務#id-2606C1",
+          "raw": "前提: 2606A1、Bd2"
+        }]
+      },
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [{
+              "selector": { "familyIds": [1041, 1044, 642, 994, 992, 993, 16, 35] },
+              "min": 5,
+              "distinctBy": "family"
+            }],
+            "forbidden": [],
+            "size": { "min": 5, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/新着任務#id-2606Cm1",
+            "raw": "花月、桐、竹、榧、杉、樫、潮、響から5隻以上。本日中に演習A勝利以上3回"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 383,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [{
+              "selector": { "familyIds": [491, 492, 935, 962, 965, 1051, 1053, 1055] },
+              "min": 3,
+              "distinctBy": "family"
+            }],
+            "forbidden": [],
+            "size": { "min": 3, "max": 6 },
+            "distinct": true
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/新着任務#id-2606Cw1",
+            "raw": "フランス艦艇3隻以上。本日中に演習A勝利以上3回。対象艦は現行start2の8艦娘家族を列挙"
+          }]
+        },
+        "objectiveOverrides": { "objective-1": { "constraints": "$conditions" } },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 918,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B146", "event": "battle_boss_win_rank_s", "mapIds": [25, 63, 64, 65],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [630] } }], "groups": [{ "selector": { "typeIds": [2] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "Gotland andra旗艦・駆逐艦1隻以上" } }
+      } },
+      "rewardOverrides": {
+        "choiceOverrides": {
+          "choice-1": {
+            "entryIds": ["reward-item-1", "reward-item-2"], "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B146", "raw": "選択報酬: 新型航空兵装資材x2 / Fairey Seafox改x1" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 922,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B150",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "4-5", "mapId": 45, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [629] }, "min": 1 }, { "selector": { "groupIds": ["country.us", "country.uk", "country.au", "country.nl"] }, "min": 3, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "Fletcher Mk.II・米英豪蘭艦3隻" } }
+      } },
+      "rewardOverrides": {
+        "additionalEntries": [
+          {
+            "id": "reward-wiki-catapult", "kind": "use-item", "useItemId": 65, "quantity": 1,
+            "label": "試製甲板カタパルト", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B150" }]
+          },
+          {
+            "id": "reward-wiki-blueprint", "kind": "use-item", "useItemId": 58, "quantity": 1,
+            "label": "改装設計図", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B150" }]
+          }
+        ],
+        "choiceOverrides": {
+          "choice-1": {
+            "entryIds": ["reward-wiki-catapult", "reward-item-2", "reward-wiki-blueprint"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B150" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 924,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B152", "event": "battle_boss_win_rank_s", "mapIds": [24, 25, 43],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [11, 18] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "正規空母級2隻以上" } }
+      } },
+      "rewardOverrides": {
+        "entryOverrides": {
+          "reward-item-3": { "improvement": 4 }
+        },
+        "additionalEntries": [{
+          "id": "reward-wiki-catapult", "kind": "use-item", "useItemId": 65, "quantity": 1,
+          "label": "試製甲板カタパルト", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B152" }]
+        }],
+        "choiceOverrides": {
+          "choice-1": {
+            "entryIds": ["reward-item-2", "reward-wiki-catapult", "reward-item-3"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B152", "raw": "開発資材x88 / 試製甲板カタパルトx1 / TBF★4x1" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 926,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B154",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [594, 599] }, "min": 1 }, { "selector": { "masterIds": [698, 610, 646] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "赤城改二/戊・加賀改二/戊/護" } },
+        "objectives": [
+          { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55, "raw": "5-5ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72, "raw": "7-2-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "6-2", "mapId": 62, "raw": "6-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "6-5", "mapId": 65, "raw": "6-5ボスS勝利x1" }
+        ]
+      } },
+      "rewardOverrides": {
+        "entryOverrides": {
+          "reward-item-2": { "improvement": 2 },
+          "reward-item-4": { "improvement": 2 }
+        },
+        "additionalEntries": [
+          {
+            "id": "reward-wiki-catapult", "kind": "use-item", "useItemId": 65, "quantity": 1,
+            "label": "試製甲板カタパルト", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B154" }]
+          },
+          {
+            "id": "reward-wiki-blueprint", "kind": "use-item", "useItemId": 58, "quantity": 1,
+            "label": "改装設計図", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B154" }]
+          }
+        ],
+        "choiceOverrides": {
+          "choice-1": {
+            "entryIds": ["reward-wiki-catapult", "reward-item-1", "reward-item-2"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B154#choice-1" }]
+          },
+          "choice-2": {
+            "entryIds": ["reward-item-3", "reward-wiki-blueprint", "reward-item-4"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B154#choice-2" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 968,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B177",
+        "objectives": [
+          { "event": "battle_boss_win_rank_a", "label": "2-5", "mapId": 25, "raw": "2-5ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "7-2-2", "mapId": 72, "raw": "7-2-2ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "7-4", "mapId": 74, "raw": "7-4ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "6-4", "mapId": 64, "raw": "6-4ボスA勝利以上x1" }
+        ],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [522] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "八幡丸/雲鷹系列旗艦" } }
+      } },
+      "rewardOverrides": {
+        "additionalEntries": [{
+          "id": "reward-wiki-catapult", "kind": "use-item", "useItemId": 65, "quantity": 1,
+          "label": "試製甲板カタパルト", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B177" }]
+        }],
+        "choiceOverrides": {
+          "choice-2": {
+            "entryIds": ["reward-item-4", "reward-item-5", "reward-wiki-catapult"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B177" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 977,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B182",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "4-5", "mapId": 45 }, { "event": "battle_boss_win_rank_s", "label": "5-3", "mapId": 53 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }, { "event": "battle_boss_win_rank_s", "label": "6-5", "mapId": 65 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [911, 916] }, "min": 1 }, { "selector": { "masterIds": [546] }, "min": 1 }, { "selector": { "typeIds": [2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "大和改二/重・武蔵改二・駆逐艦2隻以上" } }
+      } },
+      "rewardOverrides": {
+        "entryOverrides": {
+          "reward-item-4": { "improvement": 8 }
+        },
+        "additionalEntries": [{
+          "id": "reward-wiki-blueprint", "kind": "use-item", "useItemId": 58, "quantity": 1,
+          "label": "改装設計図", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B182" }]
+        }],
+        "choiceOverrides": {
+          "choice-1": {
+            "entryIds": ["reward-wiki-blueprint", "reward-item-1", "reward-item-2"],
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B182#choice-1" }]
+          },
+          "choice-2": {
+            "valid": true, "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B182#choice-2" }]
+          }
+        },
+        "unresolved": []
+      },
+      "confidence": { "rewards": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 1101,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F96",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [2] }, "quantity": 8, "operation": "discard", "label": "12.7cm連装砲", "raw": "「12.7cm連装砲」x8を廃棄" },
+          { "kind": "use-item", "useItemId": 44, "quantity": 4000, "operation": "consume", "label": "家具コイン", "raw": "家具コインx4,000を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [4] }, "quantity": 4, "operation": "consume", "label": "14cm単装砲", "raw": "「14cm単装砲」x4を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [6] }, "quantity": 4, "operation": "consume", "label": "20.3cm連装砲", "raw": "「20.3cm連装砲」x4を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1102,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F97",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [1] }, "quantity": 7, "operation": "discard", "label": "12cm単装砲", "raw": "「12cm単装砲」x7を廃棄" },
+          { "kind": "resource", "resource": "fuel", "quantity": 2400, "operation": "consume", "label": "燃料", "raw": "燃料x2,400を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [6] }, "quantity": 5, "operation": "consume", "label": "20.3cm連装砲", "raw": "「20.3cm連装砲」x5を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [7] }, "quantity": 5, "operation": "consume", "label": "35.6cm連装砲", "raw": "「35.6cm連装砲」x5を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1104,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-Fy6",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [106] }, "quantity": 3, "operation": "discard", "label": "13号対空電探改", "raw": "「13号対空電探改」x3を廃棄" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 100, "operation": "consume", "label": "開発資材", "raw": "開発資材x100を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [46] }, "quantity": 2, "operation": "consume", "label": "九三式水中聴音機", "raw": "「九三式水中聴音機」x2を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [28] }, "quantity": 2, "operation": "consume", "label": "22号対水上電探", "raw": "「22号対水上電探」x2を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1105,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-Fy7",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [47] }, "quantity": 3, "operation": "discard", "label": "陸上攻撃機", "raw": "陸上攻撃機x3を廃棄" },
+          { "kind": "resource", "resource": "ammo", "quantity": 2800, "operation": "consume", "label": "弾薬", "raw": "弾薬x2,800を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [16] }, "quantity": 4, "operation": "consume", "label": "九七式艦攻", "raw": "「九七式艦攻」x4を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [17] }, "quantity": 4, "operation": "consume", "label": "天山", "raw": "「天山」x4を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1112,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F106",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [1] }, "quantity": 4, "operation": "discard", "label": "小口径主砲", "raw": "小口径主砲x4を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 4, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x4を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [3] }, "quantity": 4, "operation": "discard", "label": "大口径主砲", "raw": "大口径主砲x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [75] }, "quantity": 1, "operation": "consume", "label": "ドラム缶(輸送用)", "raw": "ドラム缶(輸送用)x1を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 10, "operation": "consume", "label": "開発資材", "raw": "開発資材x10を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 1800, "operation": "consume", "label": "鋼材", "raw": "鋼材x1,800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1114,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F108",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [1] }, "quantity": 3, "operation": "discard", "label": "小口径主砲", "raw": "小口径主砲x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 3, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [4] }, "quantity": 3, "operation": "discard", "label": "副砲", "raw": "副砲x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [7] }, "quantity": 3, "operation": "consume", "label": "35.6cm連装砲", "raw": "35.6cm連装砲x3を準備" },
+          { "kind": "use-item", "useItemId": 2, "quantity": 8, "operation": "consume", "label": "高速建造材", "raw": "高速建造材x8を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 800, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1115,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F109",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [3] }, "quantity": 3, "operation": "discard", "label": "大口径主砲", "raw": "大口径主砲x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [4] }, "quantity": 3, "operation": "discard", "label": "副砲", "raw": "副砲x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [10] }, "quantity": 3, "operation": "discard", "label": "水上偵察機", "raw": "水上偵察機x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [9] }, "quantity": 2, "operation": "consume", "label": "46cm三連装砲", "raw": "46cm三連装砲x2を準備" },
+          { "kind": "use-item", "useItemId": 67, "quantity": 4, "operation": "consume", "label": "洋上補給", "raw": "洋上補給x4を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 2700, "operation": "consume", "label": "弾薬", "raw": "弾薬x2,700を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1116,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F110",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [10] }, "quantity": 3, "operation": "discard", "label": "水上偵察機", "raw": "水上偵察機x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [11, 45] }, "quantity": 3, "operation": "discard", "label": "水上爆撃機/多用途水上機", "raw": "水上爆撃機/多用途水上機x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [21] }, "quantity": 3, "operation": "discard", "label": "機銃", "raw": "機銃x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [102] }, "quantity": 2, "operation": "consume", "label": "九八式水上偵察機(夜偵)", "raw": "九八式水上偵察機(夜偵)x2を準備" },
+          { "kind": "use-item", "useItemId": 2, "quantity": 10, "operation": "consume", "label": "高速建造材", "raw": "高速建造材x10を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 2800, "operation": "consume", "label": "鋼材", "raw": "鋼材x2,800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1130,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F118",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [21] }, "quantity": 3, "operation": "discard", "label": "機銃", "raw": "機銃x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [17] }, "quantity": 3, "operation": "discard", "label": "機関部強化", "raw": "機関部強化x3を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [16, 27, 28] }, "quantity": 3, "operation": "discard", "label": "バルジ系", "raw": "バルジ系x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [75] }, "quantity": 3, "operation": "consume", "label": "ドラム缶(輸送用)", "raw": "ドラム缶(輸送用)x3を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 2700, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx2,700を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 5500, "operation": "consume", "label": "鋼材", "raw": "鋼材x5,500を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1131,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F119",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [1] }, "quantity": 18, "operation": "discard", "label": "小口径主砲", "raw": "小口径主砲x18を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 12, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x12を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [15] }, "quantity": 6, "operation": "discard", "label": "爆雷系", "raw": "爆雷系装備x6を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [42] }, "quantity": 1, "operation": "consume", "label": "応急修理要員", "raw": "応急修理要員x1を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 2500, "operation": "consume", "label": "弾薬", "raw": "弾薬x2,500を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 3000, "operation": "consume", "label": "鋼材", "raw": "鋼材x3,000を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1132,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F120",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [955, 960] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "清霜改二/改二丁旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [267] }, "quantity": 1, "operation": "convert", "label": "12.7cm連装砲D型改二", "state": { "improvement": { "min": 8 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [955, 960] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "清霜改二/丁第一スロットに12.7cm連装砲D型改二★+8以上を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 22, "operation": "consume", "label": "開発資材", "raw": "開発資材x22を準備" },
+          { "kind": "use-item", "useItemId": 75, "quantity": 1, "operation": "consume", "label": "新型砲熕兵装資材", "raw": "新型砲熕兵装資材x1を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [2] }, "quantity": 10, "operation": "consume", "label": "12.7cm連装砲", "raw": "12.7cm連装砲x10を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 350, "operation": "consume", "label": "弾薬", "raw": "弾薬x350を準備" },
+          { "kind": "use-item", "useItemId": 4, "quantity": 8, "operation": "consume", "label": "改修資材", "raw": "改修資材x8を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1133,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F121",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [955, 960, 578] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "清霜改二/丁・朝霜改二旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [240] }, "quantity": 1, "operation": "convert", "label": "22号対水上電探改四(後期調整型)", "placement": { "role": "secretary", "shipSelector": { "masterIds": [955, 960, 578] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに22号対水上電探改四(後期調整型)を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 40, "operation": "consume", "label": "開発資材", "raw": "開発資材x40を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [450] }, "quantity": 1, "operation": "consume", "label": "13号対空電探改(後期型)", "state": { "improvement": { "min": 4 } }, "raw": "13号対空電探改(後期型)★+4以上x1を準備" },
+          { "kind": "use-item", "useItemId": 4, "quantity": 6, "operation": "consume", "label": "改修資材", "raw": "改修資材x6を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1134,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F122",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [145, 961, 489] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "時雨改二/改三・満潮改二旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [88] }, "quantity": 1, "operation": "convert", "label": "22号対水上電探改四", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [145, 961, 489] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに22号対水上電探改四★maxを装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 22, "operation": "consume", "label": "開発資材", "raw": "開発資材x22を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [28] }, "quantity": 4, "operation": "consume", "label": "22号対水上電探", "raw": "22号対水上電探x4を準備" },
+          { "kind": "use-item", "useItemId": 4, "quantity": 6, "operation": "consume", "label": "改修資材", "raw": "改修資材x6を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1137,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F123",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "classIds": [117] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "鵜来型旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 2, "operation": "own", "label": "三式爆雷投射機総数" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "placement": { "role": "secretary", "shipSelector": { "classIds": [117] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "鵜来型第一スロットに三式爆雷投射機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "consume", "label": "三式爆雷投射機", "raw": "三式爆雷投射機x1を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 32, "operation": "consume", "label": "開発資材", "raw": "開発資材x32を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [46] }, "quantity": 4, "operation": "discard", "label": "九三式水中聴音機", "raw": "九三式水中聴音機x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [44] }, "quantity": 4, "operation": "discard", "label": "九四式爆雷投射機", "raw": "九四式爆雷投射機x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [226] }, "quantity": 4, "operation": "discard", "label": "九五式爆雷", "raw": "九五式爆雷x4を廃棄" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1139,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F124",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [183] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "大淀旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [27] }, "quantity": 3, "operation": "own", "label": "13号対空電探総数" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [27] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "13号対空電探", "placement": { "role": "secretary", "shipSelector": { "familyIds": [183] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "大淀第一スロットに13号対空電探を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 20, "operation": "consume", "label": "開発資材", "raw": "開発資材x20を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [30] }, "quantity": 2, "operation": "discard", "label": "21号対空電探", "raw": "21号対空電探x2を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [27] }, "quantity": 2, "operation": "discard", "label": "13号対空電探", "raw": "13号対空電探x2を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [145] }, "quantity": 3, "operation": "discard", "label": "戦闘糧食", "raw": "戦闘糧食x3を廃棄" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1140,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F125",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [969] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Richelieu Deux旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [246] }, "quantity": 1, "operation": "convert", "label": "38cm四連装砲改", "placement": { "role": "secretary", "shipSelector": { "masterIds": [969] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "Richelieu Deux第一スロットに38cm四連装砲改を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [246] }, "quantity": 1, "operation": "convert", "label": "38cm四連装砲改", "placement": { "role": "secretary", "shipSelector": { "masterIds": [969] }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "Richelieu Deux第二スロットに38cm四連装砲改を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 20, "operation": "consume", "label": "開発資材", "raw": "開発資材x20を準備" },
+          { "kind": "use-item", "useItemId": 100, "quantity": 1, "operation": "consume", "label": "海外艦最新技術", "raw": "海外艦最新技術x1を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [8] }, "quantity": 4, "operation": "discard", "label": "41cm連装砲", "raw": "41cm連装砲x4を廃棄" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1141,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F126",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [911, 916, 488, 663, 668] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "指定改二艦旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [238] }, "quantity": 1, "operation": "convert", "label": "零式水上偵察機11型乙", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [911, 916, 488, 663, 668] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに零式水上偵察機11型乙★maxを装備" },
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 15, "operation": "discard", "label": "零式水上偵察機", "raw": "零式水上偵察機x15を廃棄" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 2, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 60, "operation": "consume", "label": "開発資材", "raw": "開発資材x60を準備" },
+          { "kind": "use-item", "useItemId": 101, "quantity": 1, "operation": "consume", "label": "夜間熟練搭乗員", "raw": "夜間熟練搭乗員x1を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1142,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F127",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [461, 466] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "翔鶴改二/改二甲旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [144] }, "quantity": 1, "operation": "convert", "label": "天山一二型(村田隊)", "placement": { "role": "secretary", "shipSelector": { "masterIds": [461, 466] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "翔鶴改二/甲第一スロットに天山一二型(村田隊)を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [17] }, "quantity": 4, "operation": "discard", "label": "天山", "raw": "天山x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [373] }, "quantity": 1, "operation": "consume", "label": "天山一二型甲改(空六号電探改装備機)", "raw": "天山一二型甲改(空六号電探改装備機)x1を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 2, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 48, "operation": "consume", "label": "開発資材", "raw": "開発資材x48を準備" },
+          { "kind": "use-item", "useItemId": 101, "quantity": 1, "operation": "consume", "label": "夜間熟練搭乗員", "raw": "夜間熟練搭乗員x1を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1143,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F128",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [694] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "霧島改二丙旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [329] }, "quantity": 1, "operation": "convert", "label": "35.6cm連装砲改二", "state": { "improvement": { "min": 8 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [694] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "霧島改二丙第一スロットに35.6cm連装砲改二★+8以上を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [7] }, "quantity": 8, "operation": "discard", "label": "35.6cm連装砲", "raw": "35.6cm連装砲x8を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [328] }, "quantity": 1, "operation": "consume", "label": "35.6cm連装砲改", "raw": "35.6cm連装砲改x1を準備" },
+          { "kind": "use-item", "useItemId": 75, "quantity": 2, "operation": "consume", "label": "新型砲熕兵装資材", "raw": "新型砲熕兵装資材x2を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 7800, "operation": "consume", "label": "鋼材", "raw": "鋼材x7,800を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1145,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F129",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [14] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "潜水空母旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 9, "operation": "own", "label": "零式水上偵察機総数" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 1, "operation": "convert", "label": "零式水上偵察機", "state": { "improvement": { "min": 4 } }, "placement": { "role": "secretary", "shipSelector": { "typeIds": [14] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "潜水空母第一スロットに零式水上偵察機★+4以上を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 8, "operation": "discard", "label": "零式水上偵察機", "raw": "零式水上偵察機x8を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [5] }, "quantity": 15, "operation": "discard", "label": "魚雷", "raw": "魚雷装備x15を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [46] }, "quantity": 4, "operation": "consume", "label": "九三式水中聴音機", "raw": "九三式水中聴音機x4を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 1, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x1を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 60, "operation": "consume", "label": "開発資材", "raw": "開発資材x60を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 1, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x1を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1148,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F130",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [986, 426] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "白雪改二/吹雪改二旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [120] }, "quantity": 5, "operation": "own", "label": "91式高射装置総数" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [120] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "91式高射装置", "placement": { "role": "secretary", "shipSelector": { "masterIds": [986, 426] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに91式高射装置を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [120] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "91式高射装置", "placement": { "role": "secretary", "shipSelector": { "masterIds": [986, 426] }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第二スロットに91式高射装置を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 16, "operation": "consume", "label": "開発資材", "raw": "開発資材x16を準備" },
+          { "kind": "use-item", "useItemId": 4, "quantity": 4, "operation": "consume", "label": "改修資材", "raw": "改修資材x4を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [120] }, "quantity": 3, "operation": "discard", "label": "91式高射装置", "raw": "91式高射装置x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [27] }, "quantity": 3, "operation": "discard", "label": "13号対空電探", "raw": "13号対空電探x3を廃棄" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1151,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F131",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [10] }, "quantity": 14, "operation": "discard", "label": "水上偵察機", "raw": "水上偵察機x14を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 12, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x12を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [7] }, "quantity": 10, "operation": "discard", "label": "艦上爆撃機", "raw": "艦上爆撃機x10を廃棄" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 36, "operation": "consume", "label": "開発資材", "raw": "開発資材x36を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [20] }, "quantity": 8, "operation": "consume", "label": "零式艦戦21型", "raw": "零式艦戦21型x8を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [181] }, "quantity": 4, "operation": "consume", "label": "零式艦戦32型", "raw": "零式艦戦32型x4を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1161,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F139",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [196, 1031] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "飛龍改二/改三旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [6] }, "quantity": 9, "operation": "discard", "label": "艦上戦闘機", "raw": "艦戦x9を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [7] }, "quantity": 9, "operation": "discard", "label": "艦上爆撃機", "raw": "艦爆x9を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [8] }, "quantity": 9, "operation": "discard", "label": "艦上攻撃機", "raw": "艦攻x9を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [15] }, "quantity": 8, "operation": "discard", "label": "爆雷兵装", "raw": "爆雷兵装x8を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [21] }, "quantity": 8, "operation": "discard", "label": "機銃兵装", "raw": "機銃兵装x8を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 9, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x9を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [3] }, "quantity": 7, "operation": "discard", "label": "大口径主砲", "raw": "大口径主砲x7を廃棄" },
+          { "kind": "resource", "resource": "ammo", "quantity": 8800, "operation": "consume", "label": "弾薬", "raw": "弾薬x8,800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1162,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F140",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [21] }, "quantity": 6, "operation": "discard", "label": "零式艦戦52型", "raw": "零式艦戦52型x6を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [201] }, "quantity": 4, "operation": "discard", "label": "紫電一一型", "raw": "紫電一一型x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [10] }, "quantity": 8, "operation": "discard", "label": "12.7cm連装高角砲", "raw": "12.7cm連装高角砲x8を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [9] }, "quantity": 2, "operation": "discard", "label": "46cm三連装砲", "raw": "46cm三連装砲x2を廃棄" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 8800, "operation": "consume", "label": "鋼材", "raw": "鋼材x8,800を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 8800, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx8,800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1152,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F132",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [1] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "海防艦旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "state": { "improvement": { "min": 3 } }, "placement": { "role": "secretary", "shipSelector": { "typeIds": [1] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "海防艦第一スロットに三式爆雷投射機★+3以上を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "placement": { "role": "secretary", "shipSelector": { "typeIds": [1] }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "同第二スロットに三式爆雷投射機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "placement": { "role": "secretary", "shipSelector": { "typeIds": [1] }, "slotIndex": 2, "mustBeCurrentlyEquipped": true }, "raw": "同第三スロットに三式爆雷投射機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [44] }, "quantity": 4, "operation": "discard", "label": "九四式爆雷投射機", "raw": "九四式爆雷投射機x4を廃棄" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 32, "operation": "consume", "label": "開発資材", "raw": "開発資材x32を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1153,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F133",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "classIds": [85, 117] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "日振型/鵜来型旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "state": { "improvement": { "min": 4 } }, "placement": { "role": "secretary", "shipSelector": { "classIds": [85, 117] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "日振型/鵜来型第一スロットに三式爆雷投射機★+4以上を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "placement": { "role": "secretary", "shipSelector": { "classIds": [85, 117] }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "同第二スロットに三式爆雷投射機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機", "placement": { "role": "secretary", "shipSelector": { "classIds": [85, 117] }, "slotIndex": 2, "mustBeCurrentlyEquipped": true }, "raw": "同第三スロットに三式爆雷投射機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [44] }, "quantity": 4, "operation": "discard", "label": "九四式爆雷投射機", "raw": "九四式爆雷投射機x4を廃棄" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 64, "operation": "consume", "label": "開発資材", "raw": "開発資材x64を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1154,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F134",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [2], "level": { "min": 96 } } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Lv.96以上駆逐艦旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [287] }, "quantity": 1, "operation": "convert", "label": "三式爆雷投射機 集中配備", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "typeIds": [2], "level": { "min": 96 } }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "第一スロットに三式爆雷投射機 集中配備★maxを装備" },
+          { "kind": "equipment", "selector": { "masterIds": [1] }, "quantity": 1, "operation": "convert", "label": "12cm単装砲", "state": { "improvement": { "min": 6 } }, "placement": { "role": "secretary", "shipSelector": { "typeIds": [2], "level": { "min": 96 } }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "第二スロットに12cm単装砲★+6以上を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 6, "operation": "discard", "label": "三式水中探信儀", "raw": "三式水中探信儀x6を廃棄" },
+          { "kind": "use-item", "useItemId": 92, "quantity": 3, "operation": "consume", "label": "新型噴進装備開発資材", "raw": "新型噴進装備開発資材x3を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1155,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F135",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "classIds": [54], "level": { "min": 70 } } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Lv.70以上秋月型旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [3] }, "quantity": 1, "operation": "convert", "label": "10cm連装高角砲", "placement": { "role": "secretary", "shipSelector": { "classIds": [54], "level": { "min": 70 } }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "第一スロットに10cm連装高角砲を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [3] }, "quantity": 1, "operation": "convert", "label": "10cm連装高角砲", "placement": { "role": "secretary", "shipSelector": { "classIds": [54], "level": { "min": 70 } }, "slotIndex": 1, "mustBeCurrentlyEquipped": true }, "raw": "第二スロットに10cm連装高角砲を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [121] }, "quantity": 1, "operation": "convert", "label": "94式高射装置", "placement": { "role": "secretary", "shipSelector": { "classIds": [54], "level": { "min": 70 } }, "slotIndex": 2, "mustBeCurrentlyEquipped": true }, "raw": "第三スロットに94式高射装置を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [10] }, "quantity": 8, "operation": "discard", "label": "12.7cm連装高角砲", "raw": "12.7cm連装高角砲x8を廃棄" },
+          { "kind": "use-item", "useItemId": 75, "quantity": 2, "operation": "consume", "label": "新型砲熕兵装資材", "raw": "新型砲熕兵装資材x2を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1158,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F136",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [528] } }], "groups": [{ "selector": { "familyIds": [674, 675, 485, 484] }, "min": 3, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "早波旗艦・第三十二駆逐隊僚艦3隻" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [46] }, "quantity": 5, "operation": "discard", "label": "九三式水中聴音機", "raw": "九三式水中聴音機x5を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 5, "operation": "discard", "label": "三式水中探信儀", "raw": "三式水中探信儀x5を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [226] }, "quantity": 5, "operation": "discard", "label": "九五式爆雷", "raw": "九五式爆雷x5を廃棄" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 1, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x1を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 8, "operation": "consume", "label": "三式爆雷投射機", "raw": "三式爆雷投射機x8を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1159,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F137",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [894, 899] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "鳳翔改二/改二戦旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [19] }, "quantity": 3, "operation": "discard", "label": "九六式艦戦", "raw": "九六式艦戦x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [20] }, "quantity": 3, "operation": "discard", "label": "零式艦戦21型", "raw": "零式艦戦21型x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [181] }, "quantity": 3, "operation": "discard", "label": "零式艦戦32型", "raw": "零式艦戦32型x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [176] }, "quantity": 3, "operation": "discard", "label": "三式戦 飛燕", "state": { "improvement": { "exact": 0 } }, "raw": "未改修の三式戦 飛燕x3を廃棄" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 1, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x1を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 40, "operation": "consume", "label": "開発資材", "raw": "開発資材x40を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 4000, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx4,000を準備" },
+          { "kind": "use-item", "useItemId": 44, "quantity": 88000, "operation": "consume", "label": "家具コイン", "raw": "家具コインx88,000を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1160,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F138",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [196, 1031] } }], "groups": [{ "selector": { "familyIds": [674, 675, 485, 528, 484, 453], "remodel": { "minimumStage": 2 } }, "min": 3, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "飛龍改二/改三旗艦・第三十二駆改二/風雲改二僚艦3隻" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [21] }, "quantity": 5, "operation": "discard", "label": "零式艦戦52型", "raw": "零式艦戦52型x5を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [55] }, "quantity": 5, "operation": "discard", "label": "紫電改二", "raw": "紫電改二x5を廃棄" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 2, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x2を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [546] }, "quantity": 1, "operation": "consume", "label": "試製 震電(局地戦闘機)", "state": { "improvement": { "exact": 10 } }, "raw": "試製 震電(局地戦闘機)★maxを準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1163,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F141",
+        "label": "震電の噴式推進化",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [1031] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "飛龍改三旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [547] }, "quantity": 1, "operation": "convert", "label": "震電改二(艦戦型改二)", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [1031] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "飛龍改三第一スロットに震電改二(艦戦型改二)★maxを搭載" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 3, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x3を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 4, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x4を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 160, "operation": "consume", "label": "開発資材", "raw": "開発資材x160を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 1, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x1を準備" },
+          { "kind": "use-item", "useItemId": 71, "quantity": 1, "operation": "consume", "label": "ネ式エンジン", "raw": "ネ式エンジンx1を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1164,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F142",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [674] } }], "groups": [{ "selector": { "familyIds": [485] }, "min": 1 }, { "selector": { "familyIds": [25] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "玉波旗艦・藤波/北上僚艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [45] }, "quantity": 8, "operation": "discard", "label": "三式爆雷投射機", "raw": "三式爆雷投射機x8を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 4, "operation": "discard", "label": "三式水中探信儀", "raw": "三式水中探信儀x4を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [10] }, "quantity": 8, "operation": "discard", "label": "12.7cm連装高角砲", "raw": "12.7cm連装高角砲x8を廃棄" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 1, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x1を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [65] }, "quantity": 4, "operation": "consume", "label": "15.2cm連装砲", "raw": "15.2cm連装砲x4を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 628,
+      "sources": ["kcQuests", "poi", "kcwiki quest data"],
+      "requirements": {
+        "objectiveOverrides": {
+          "objective-kcwiki-1": {
+            "event": "destory_item", "label": "零式舰战52型", "count": { "required": 2, "initial": 0 },
+            "completion": {
+              "logic": "count", "eventKey": "destory_item", "automatic": true,
+              "confidence": "verified",
+              "sourceRefs": [{ "source": "kcwiki quest data", "field": "data/628.json#requirements.scraps[0]", "raw": "零式艦戦52型x2を廃棄" }]
+            },
+            "confidence": "verified",
+            "sourceRefs": [{ "source": "kcwiki quest data", "field": "data/628.json#requirements.scraps[0]", "raw": "零式艦戦52型x2を廃棄" }]
+          }
+        }
+      },
+      "tracking": {
+        "poiGoal": {
+          "destory_item": { "description": "废弃 零式艦战52型", "required": 2, "init": 0, "slotitemId": [21] }
+        }
+      },
+      "confidence": { "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 654,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-Fy2",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [515] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Ark Royal秘書艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [242] }, "quantity": 2, "operation": "own", "label": "Swordfish合計" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [242] }, "quantity": 1, "operation": "convert", "label": "Swordfish", "state": { "improvement": { "exact": 10 }, "locked": false }, "placement": { "role": "secretary", "shipSelector": { "familyIds": [515] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "Ark Royal第一スロットに改修maxかつロック解除済みSwordfishを搭載" },
+          { "kind": "equipment", "selector": { "masterIds": [242] }, "quantity": 1, "operation": "discard", "label": "Swordfish", "raw": "Swordfish x1を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [249] }, "quantity": 2, "operation": "discard", "label": "Fulmar", "raw": "Fulmar x2を廃棄" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 1, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x1を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 1500, "operation": "consume", "label": "弾薬", "raw": "弾薬x1,500を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 1500, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx1,500を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 698,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F91",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [646] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "加賀改二護旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [257] }, "quantity": 1, "operation": "convert", "label": "TBM-3D", "state": { "locked": false }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [646] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "加賀改二護第一スロットにロック解除済みTBM-3Dを搭載" },
+          { "kind": "equipment", "selector": { "masterIds": [256] }, "quantity": 2, "operation": "discard", "label": "TBF", "raw": "TBF x2を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [18] }, "quantity": 1, "operation": "discard", "label": "流星", "raw": "流星 x1を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [52] }, "quantity": 1, "operation": "discard", "label": "流星改", "raw": "流星改 x1を廃棄" },
+          { "kind": "resource", "resource": "ammo", "quantity": 1840, "operation": "consume", "label": "弾薬", "raw": "弾薬x1,840を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 6200, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx6,200を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 2, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 1, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x1を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1106,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F101",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [488] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "由良改二旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [238] }, "quantity": 1, "operation": "convert", "label": "零式水上偵察機11型乙", "state": { "improvement": { "exact": 10 }, "locked": false }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [488] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "由良改二第一スロットに最大改修の零式水上偵察機11型乙を搭載" },
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 3, "operation": "discard", "label": "零式水上偵察機", "raw": "零式水上偵察機x3を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [26] }, "quantity": 3, "operation": "discard", "label": "瑞雲", "raw": "瑞雲x3を廃棄" },
+          { "kind": "resource", "resource": "fuel", "quantity": 1300, "operation": "consume", "label": "燃料", "raw": "燃料x1,300を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 1700, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx1,700を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 1, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x1を準備" },
+          { "kind": "use-item", "useItemId": 78, "quantity": 1, "operation": "consume", "label": "戦闘詳報", "raw": "戦闘詳報x1を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 3, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x3を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1108,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F103",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [588, 667, 145] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "山風改二/改二丁/時雨改二旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 3, "operation": "own", "label": "三式水中探信儀合計" } }
+        ] },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 1, "operation": "convert", "label": "三式水中探信儀", "state": { "improvement": { "exact": 10 }, "locked": false }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [588, 667, 145] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに最大改修かつロック解除済み三式水中探信儀を搭載" },
+          { "kind": "equipment", "selector": { "masterIds": [46] }, "quantity": 2, "operation": "discard", "label": "九三式水中聴音機", "raw": "九三式水中聴音機x2を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [47] }, "quantity": 2, "operation": "discard", "label": "三式水中探信儀", "raw": "三式水中探信儀x2を廃棄" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 30, "operation": "consume", "label": "開発資材", "raw": "開発資材x30を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 1300, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx1,300を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1109,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F104",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [621] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "神州丸秘書艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [166] }, "quantity": 1, "operation": "convert", "label": "大発動艇(八九式中戦車&陸戦隊)", "state": { "improvement": { "exact": 10 }, "locked": false }, "placement": { "role": "secretary", "shipSelector": { "familyIds": [621] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "神州丸第一スロットに最大改修かつロック解除済み大発動艇(八九式中戦車&陸戦隊)を搭載" },
+          { "kind": "equipment", "selector": { "masterIds": [37] }, "quantity": 2, "operation": "discard", "label": "7.7mm機銃", "raw": "7.7mm機銃x2を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [68] }, "quantity": 2, "operation": "discard", "label": "大発動艇", "raw": "大発動艇x2を廃棄" },
+          { "kind": "use-item", "useItemId": 2, "quantity": 8, "operation": "consume", "label": "高速建造材", "raw": "高速建造材x8を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 10, "operation": "consume", "label": "開発資材", "raw": "開発資材x10を準備" },
+          { "kind": "resource", "resource": "steel", "quantity": 800, "operation": "consume", "label": "鋼材", "raw": "鋼材x800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1111,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F105", "label": "精鋭一式陸攻隊の編成",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [180] }, "quantity": 1, "operation": "convert", "label": "一式陸攻 二二型甲", "state": { "improvement": { "exact": 10 } }, "raw": "最大改修の一式陸攻 二二型甲x1を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [169] }, "quantity": 2, "operation": "consume", "label": "一式陸攻", "raw": "一式陸攻x2を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 3, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x3を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1113,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F107", "label": "誘導弾搭載機の開発",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [453] }, "quantity": 1, "operation": "convert", "label": "キ102乙", "placement": { "location": "not-airbase" }, "raw": "キ102乙x1を準備（基地航空隊配備機はカウント不可）" },
+          { "kind": "equipment", "selector": { "masterIds": [446] }, "quantity": 1, "operation": "consume", "label": "二式複戦 屠龍 丙型", "placement": { "location": "not-airbase" }, "raw": "二式複戦 屠龍 丙型x1を準備（基地航空隊配備機はカウント不可）" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 2, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x2を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 4, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x4を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1117,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F111",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [158, 488] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "川内改二/由良改二旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [102] }, "quantity": 1, "operation": "convert", "label": "九八式水上偵察機(夜偵)", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [158, 488] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに最大改修の九八式水上偵察機(夜偵)を配備" },
+          { "kind": "equipment", "selector": { "masterIds": [238] }, "quantity": 1, "operation": "consume", "label": "零式水上偵察機11型乙", "state": { "improvement": { "exact": 10 } }, "raw": "最大改修の零式水上偵察機11型乙x1を準備" },
+          { "kind": "use-item", "useItemId": 4, "quantity": 13, "operation": "consume", "label": "改修資材", "raw": "改修資材x13を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 13, "operation": "consume", "label": "開発資材", "raw": "開発資材x13を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 3, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x3を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1118,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F112",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [920] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Samuel B.Roberts Mk.II旗艦" } },
+        "label": "Hedgehogの配備",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [284] }, "quantity": 1, "operation": "convert", "label": "5inch単装砲 Mk.30", "placement": { "role": "secretary", "shipSelector": { "masterIds": [920] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "Samuel B.Roberts Mk.II第一スロットに5inch単装砲 Mk.30を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 15, "operation": "consume", "label": "開発資材", "raw": "開発資材x15を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "consume", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 92, "quantity": 2, "operation": "consume", "label": "新型噴進装備開発資材", "raw": "新型噴進装備開発資材x2を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 960, "operation": "consume", "label": "弾薬", "raw": "弾薬x960を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1123,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-Fy10",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [188, 488] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "利根改二/由良改二旗艦" } },
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 1, "operation": "convert", "label": "零式水上偵察機", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [188, 488] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに最大改修の零式水上偵察機を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [82] }, "quantity": 2, "operation": "discard", "label": "九七式艦攻(九三一空)", "raw": "九七式艦攻(九三一空)x2を廃棄" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 950, "operation": "consume", "label": "ボーキサイト", "raw": "ボーキサイトx950を準備" },
+          { "kind": "use-item", "useItemId": 77, "quantity": 2, "operation": "consume", "label": "新型航空兵装資材", "raw": "新型航空兵装資材x2を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 35, "operation": "consume", "label": "開発資材", "raw": "開発資材x35を準備" },
+          { "kind": "use-item", "useItemId": 70, "quantity": 2, "operation": "consume", "label": "熟練搭乗員", "raw": "熟練搭乗員x2を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1127,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F115",
+        "conditions": { "op": "all", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [959] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "深雪改二旗艦" } },
+          { "op": "predicate", "predicate": { "kind": "equipment", "selector": { "masterIds": [500] }, "quantity": 3, "operation": "own", "label": "発煙装置(煙幕)合計" } }
+        ] },
+        "label": "発煙装置(煙幕)の改良",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [500] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "発煙装置(煙幕)", "placement": { "role": "secretary", "shipSelector": { "masterIds": [959] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "深雪改二第一スロットに発煙装置(煙幕)を装備" },
+          { "kind": "equipment", "selector": { "masterIds": [500] }, "quantity": 2, "operation": "prepare", "label": "発煙装置(煙幕)", "raw": "発煙装置(煙幕)x2を準備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 12, "operation": "prepare", "label": "開発資材", "raw": "開発資材x12を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "prepare", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "resource", "resource": "fuel", "quantity": 480, "operation": "prepare", "label": "燃料", "raw": "燃料x480を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 350, "operation": "prepare", "label": "ボーキサイト", "raw": "ボーキサイトx350を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1128,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F116",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [593, 954] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "榛名改二乙/改二丙旗艦" } },
+        "label": "改良35.6cm砲の開発",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [502] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "35.6cm連装砲改三(ダズル迷彩仕様)", "state": { "improvement": { "min": 3 } }, "placement": { "role": "secretary", "shipSelector": { "masterIds": [593, 954] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "指定旗艦第一スロットに35.6cm連装砲改三(ダズル迷彩仕様)★+3以上を装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 48, "operation": "prepare", "label": "開発資材", "raw": "開発資材x48を準備" },
+          { "kind": "use-item", "useItemId": 75, "quantity": 2, "operation": "prepare", "label": "新型砲熕兵装資材", "raw": "新型砲熕兵装資材x2を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [7] }, "quantity": 5, "operation": "prepare", "label": "35.6cm連装砲", "raw": "35.6cm連装砲x5を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 960, "operation": "prepare", "label": "弾薬", "raw": "弾薬x960を準備" },
+          { "kind": "resource", "resource": "bauxite", "quantity": 800, "operation": "prepare", "label": "ボーキサイト", "raw": "ボーキサイトx800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1129,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/工廠任務#id-F117",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [13, 14] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "潜水艦旗艦" } },
+        "label": "潜水艦魚雷攻撃の精度向上",
+        "operations": [
+          { "kind": "equipment", "selector": { "masterIds": [213] }, "quantity": 1, "operation": "equip", "timing": "operation", "label": "後期型艦首魚雷(6門)", "state": { "improvement": { "exact": 10 } }, "placement": { "role": "secretary", "shipSelector": { "typeIds": [13, 14] }, "slotIndex": 0, "mustBeCurrentlyEquipped": true }, "raw": "潜水艦旗艦第一スロットに後期型艦首魚雷(6門)★maxを装備" },
+          { "kind": "use-item", "useItemId": 3, "quantity": 36, "operation": "prepare", "label": "開発資材", "raw": "開発資材x36を準備" },
+          { "kind": "use-item", "useItemId": 94, "quantity": 2, "operation": "prepare", "label": "新型兵装資材", "raw": "新型兵装資材x2を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [125] }, "quantity": 4, "operation": "prepare", "label": "61cm三連装(酸素)魚雷", "raw": "61cm三連装(酸素)魚雷x4を準備" },
+          { "kind": "equipment", "selector": { "masterIds": [129] }, "quantity": 3, "operation": "prepare", "label": "熟練見張員", "raw": "熟練見張員x3を準備" },
+          { "kind": "resource", "resource": "ammo", "quantity": 800, "operation": "prepare", "label": "弾薬", "raw": "弾薬x800を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1150,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualFactory": {
+        "field": "任務/新着任務#id-2605F3",
+        "operations": [
+          { "kind": "equipment", "selector": { "type2Ids": [2] }, "quantity": 20, "operation": "discard", "label": "中口径主砲", "raw": "中口径主砲x20を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [3] }, "quantity": 20, "operation": "discard", "label": "大口径主砲", "raw": "大口径主砲x20を廃棄" },
+          { "kind": "equipment", "selector": { "type2Ids": [4] }, "quantity": 10, "operation": "discard", "label": "副砲", "raw": "副砲x10を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [25] }, "quantity": 10, "operation": "discard", "label": "零式水上偵察機", "state": { "proficiency": { "exact": 7 } }, "raw": "練度max表示の零式水上偵察機x10を廃棄" },
+          { "kind": "equipment", "selector": { "masterIds": [10] }, "quantity": 10, "operation": "consume", "label": "12.7cm連装高角砲", "raw": "12.7cm連装高角砲x10を準備" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 898,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B162",
+        "objectives": [
+          { "event": "battle_boss_win_rank_a", "label": "3-1", "mapId": 31, "raw": "3-1ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "3-2", "mapId": 32, "raw": "3-2ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "3-3", "mapId": 33, "raw": "3-3ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "3-4", "mapId": 34, "raw": "3-4ボスA勝利以上x1" },
+          { "event": "battle_boss_win_rank_a", "label": "3-5", "mapId": 35, "raw": "3-5ボスA勝利以上x1" }
+        ]
+      } },
+      "rewardOverrides": {
+        "additionalEntries": [{
+          "id": "reward-wiki-furniture", "kind": "furniture", "quantity": 1,
+          "label": "特製二〇式鎮守府暖炉", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B162", "raw": "確定報酬: 家具『特製二〇式鎮守府暖炉』" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 847,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B163",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [652, 657] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "球磨改二/改二丁旗艦" } },
+        "objectives": [
+          { "event": "sally", "label": "1-6", "mapId": 16, "raw": "1-6ゴール到達x1" },
+          { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22, "raw": "2-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "3-2", "mapId": 32, "raw": "3-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73, "raw": "7-3-2ボスS勝利x1" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 913,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B143",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [
+          { "selector": { "familyIds": [110] }, "min": 1 },
+          { "selector": { "familyIds": [111] }, "min": 1 },
+          { "selector": { "familyIds": [93] }, "min": 1 },
+          { "selector": { "familyIds": [132] }, "min": 1 }
+        ], "forbidden": [], "size": {}, "distinct": true, "label": "翔鶴・瑞鶴・朧・秋雲" } },
+        "objectives": [
+          { "event": "battle_boss_win_rank_s", "label": "3-5", "mapId": 35, "raw": "3-5ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "5-2", "mapId": 52, "raw": "5-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72, "raw": "7-2-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "6-5", "mapId": 65, "raw": "6-5ボスS勝利x1" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 915,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/新着任務#id-2212B1", "objectiveConfidence": "parsed", "event": "battle_boss_win_rank_s", "mapIds": [14, 23, 24],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [16] } }], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "水上機母艦旗艦・駆逐艦/海防艦2隻以上" } }
+      } },
+      "confidence": { "conditions": "parsed", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 917,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B145", "event": "battle_boss_win_rank_s", "mapIds": [24, 42, 44, 45],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [630] } }], "groups": [{ "selector": { "typeIds": [2] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "Gotland andra旗艦・駆逐艦1隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 919,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B147", "event": "battle_boss_win_rank_s", "mapIds": [22, 23, 24],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "groupIds": ["country.us"] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "米艦娘2隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 920,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B148", "event": "battle_boss_win_rank_s", "mapIds": [14, 25, 35],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [628] } }], "groups": [{ "selector": { "groupIds": ["country.us", "country.uk", "country.au", "country.nl"] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "Fletcher改 Mod.2旗艦・米英豪蘭艦2隻" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 921,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B149",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-5", "mapId": 15, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "7-1", "mapId": 71, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "6-2", "mapId": 62, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "6-5", "mapId": 65, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [629] } }], "groups": [{ "selector": { "groupIds": ["country.us", "country.uk", "country.au", "country.nl"] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "Fletcher Mk.II旗艦・米英豪蘭艦2隻" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 923,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B151", "event": "battle_boss_win_rank_s", "mapIds": [43, 34, 52, 72],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "groupIds": ["country.us", "country.uk"], "typeIds": [7, 11, 18] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "米英航空母艦1隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1031,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/新着任務#id-2605B6",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "3-1", "mapId": 31, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "3-2", "mapId": 32, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "3-5", "mapId": 35, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [973, 923, 544, 79, 645, 115, 528, 484, 631, 93, 24] } }], "groups": [{ "selector": { "familyIds": [973, 923, 544, 79, 645, 115, 528, 484, 631, 93, 24] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "指定艦11名から旗艦を含む3隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1032,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/新着任務#id-2605B5",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-4", "mapId": 14, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "3-5", "mapId": 35, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "4-5", "mapId": 45, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [8, 9, 10], "level": { "min": 88 } }, "min": 2 }, { "selector": { "typeIds": [3], "level": { "min": 88 } }, "min": 1 }, { "selector": { "typeIds": [2], "level": { "min": 88 } }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "Lv88以上の戦艦2隻・軽巡1隻・駆逐艦2隻" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1048,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/新着任務#id-2606B1", "event": "battle_boss_win_rank_a", "mapIds": [13, 14],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [10, 15, 16, 17, 22] } }], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 4 }], "forbidden": [], "size": {}, "distinct": true, "label": "輸送艦/水上機母艦/航空戦艦旗艦・駆逐艦/海防艦4隻以上" } },
+        "costs": [{ "kind": "resource", "resource": "ammo", "quantity": 2200, "operation": "consume", "timing": "quest-completion", "label": "弾薬" }, { "kind": "resource", "resource": "bauxite", "quantity": 1800, "operation": "consume", "timing": "quest-completion", "label": "ボーキサイト" }]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1049,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/新着任務#id-2606B2", "event": "battle_boss_win_rank_a", "mapIds": [23, 75],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "typeIds": [15, 17, 22] } }], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "輸送艦旗艦・駆逐艦/海防艦3隻以上" } },
+        "costs": [{ "kind": "resource", "resource": "ammo", "quantity": 2400, "operation": "consume", "timing": "quest-completion", "label": "弾薬" }, { "kind": "resource", "resource": "bauxite", "quantity": 2400, "operation": "consume", "timing": "quest-completion", "label": "ボーキサイト" }]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 925,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B153", "event": "battle_boss_win_rank_s", "mapIds": [34, 44, 45, 52],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [698, 610, 646] } }], "groups": [{ "selector": { "typeIds": [11, 18] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "加賀改二/戊/護旗艦・正規空母級1隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 927,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B155",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [65] } }], "groups": [], "forbidden": [], "size": { "max": 5 }, "distinct": true, "label": "羽黒旗艦・5隻以下" } },
+        "objectives": [{ "event": "battle_boss_win_rank_a", "label": "7-3-1", "mapId": 73, "count": 4, "raw": "7-3-1ボスA勝利以上x4" }]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 929,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B156", "event": "battle_boss_win_rank_s", "mapIds": [12, 13, 21, 23],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [184, 634, 635] } }], "groups": [{ "selector": { "typeIds": [13, 14] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "大鯨/迅鯨型旗艦・潜水艦/潜水空母2隻以上" } }
+      } },
+      "rewardOverrides": {
+        "removeEntryIds": ["reward-item-1"],
+        "additionalEntries": [{
+          "id": "reward-wiki-furniture", "kind": "furniture", "quantity": 1,
+          "label": "「鯨」の掛け軸", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B156", "raw": "確定報酬: 家具『「鯨」の掛け軸』" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 930,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B157",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [648] }, "min": 1 }, { "selector": { "masterIds": [542] }, "min": 1 }, { "selector": { "masterIds": [563] }, "min": 1 }, { "selector": { "masterIds": [564] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "秋雲改二・夕雲改二・巻雲改二・風雲改二" } },
+        "objectives": [
+          { "event": "battle_boss_win_rank_s", "label": "1-4", "mapId": 14, "raw": "1-4ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22, "raw": "2-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "3-2", "mapId": 32, "raw": "3-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "4-1", "mapId": 41, "raw": "4-1ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73, "raw": "7-3-2ボスS勝利x1" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 931,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B158", "event": "battle_boss_win_rank_s", "mapIds": [15, 25, 71, 55, 63],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [497] }, "min": 1 }, { "selector": { "masterIds": [145] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "白露改二・時雨改二" } }
+      } },
+      "rewardOverrides": {
+        "additionalEntries": [{
+          "id": "reward-wiki-furniture", "kind": "furniture", "quantity": 1,
+          "label": "焼き芋と読書の時間", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B158", "raw": "確定報酬: 家具『焼き芋と読書の時間』" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 933,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B159", "event": "battle_boss_win_rank_s", "count": 2, "mapIds": [13, 14, 21, 22],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "fleetId": 1, "positions": [{ "role": "flagship", "selector": { "masterIds": [183, 321, 651] } }], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "第一艦隊・大淀/大淀改/丹陽旗艦・駆逐艦/海防艦3隻以上" } },
+        "unresolved": [{ "raw": "大淀旗艦時の随伴雪風/丹陽、または丹陽旗艦時の随伴大淀で進行しないとの報告があるが、Wikiは反例を募集中", "reason": "conflicting-player-reports-about-escort-form-exclusion" }]
+      } },
+      "confidence": { "conditions": "parsed", "objectives": "verified", "overall": "unresolved" }
+    },
+    {
+      "id": 934,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B160", "objectiveConfidence": "parsed", "event": "battle_boss_win_rank_s", "mapIds": [23, 24, 25, 33, 73],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [651, 656] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "丹陽/雪風改二旗艦" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 935,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B161", "event": "battle_boss_win_rank_s", "mapIds": [53, 55, 45, 64, 65],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [656] }, "min": 1 }, { "selector": { "masterIds": [145] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "雪風改二・時雨改二" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 936,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B164", "objectiveConfidence": "parsed", "event": "battle_boss_win_rank_s", "mapIds": [24, 32, 53, 71, 72],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [662] } }], "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "能代改二旗艦・駆逐艦3隻以上" } }
+      } },
+      "confidence": { "conditions": "verified", "objectives": "parsed", "overall": "parsed" }
+    },
+    {
+      "id": 1013,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": {
+        "field": "任務/出撃任務#id-B200",
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [979] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "稲木改二旗艦" } },
+        "objectives": [
+          { "event": "battle_boss_win_rank_s", "label": "1-3", "mapId": 13, "raw": "1-3ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "1-4", "mapId": 14, "raw": "1-4ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22, "raw": "2-2ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23, "raw": "2-3ボスS勝利x1" },
+          { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74, "raw": "7-4ボスS勝利x1" }
+        ]
+      } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 937, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B165", "event": "battle_boss_win_rank_s", "mapIds": [23, 32, 44, 54],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [665] }, "min": 1 }, { "selector": { "masterIds": [407] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "曙改二・潮改二" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 938, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B166", "event": "battle_boss_win_rank_s", "mapIds": [22, 24, 45, 51],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [501, 506] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "最上改二/改二特旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 939, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B167", "event": "battle_boss_win_rank_s",
+        "objectives": [{ "mapId": 23, "label": "2-3", "event": "battle_boss_win_rank_s" }, { "mapId": 64, "label": "6-4", "event": "battle_boss_win_rank_s" }, { "mapId": 72, "label": "7-2-2", "event": "battle_boss_win_rank_s" }, { "mapId": 73, "label": "7-3-2", "event": "battle_boss_win_rank_s" }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [501, 506] } }], "groups": [{ "selector": { "familyIds": [43, 97, 413, 414] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "最上改二/特旗艦・時雨/満潮/朝雲/山雲から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 940, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B168", "event": "battle_boss_win_rank_s", "mapIds": [14, 25, 53, 55],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [663, 668] } }], "groups": [{ "selector": { "typeIds": [2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "矢矧改二/改二乙旗艦・駆逐艦2隻以上" } }
+      } },
+      "rewardOverrides": {
+        "additionalEntries": [{
+          "id": "reward-wiki-furniture", "kind": "furniture", "quantity": 1,
+          "label": "矢矧の掛け軸", "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/出撃任務#id-B168", "raw": "確定報酬: 家具『矢矧の掛け軸』" }]
+        }],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "rewards": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 943, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B169", "event": "battle_boss_win_rank_s",
+        "objectives": [{ "mapId": 22, "label": "2-2", "event": "battle_boss_win_rank_s" }, { "mapId": 23, "label": "2-3", "event": "battle_boss_win_rank_s" }, { "mapId": 24, "label": "2-4", "event": "battle_boss_win_rank_s" }, { "mapId": 25, "label": "2-5", "event": "battle_boss_win_rank_s" }, { "mapId": 72, "label": "7-2-2", "event": "battle_boss_win_rank_s" }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [888, 883] } }], "groups": [{ "selector": { "masterIds": [145] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "龍鳳改二/改二戊旗艦・時雨改二" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 949, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B170",
+        "objectives": [{ "mapId": 24, "label": "2-4", "event": "battle_boss_win_rank_s", "count": 2 }, { "mapId": 35, "label": "3-5", "event": "battle_boss_win_rank_s", "count": 2 }, { "mapId": 64, "label": "6-4", "event": "battle_boss_win_rank_a", "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [707] } }], "groups": [{ "selector": { "classIds": [91] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "Gambier Bay Mk.II旗艦・Fletcher級1隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 952, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B171", "event": "battle_boss_win_rank_s", "mapIds": [13, 14, 21, 22],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [2] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "駆逐艦3隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 957, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B172", "event": "battle_boss_win_rank_s", "mapIds": [12, 13, 14, 15],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [588, 667] } }], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "山風改二/丁旗艦・随伴駆逐/海防2隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 958, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B173", "event": "battle_boss_win_rank_s",
+        "objectives": [{ "mapId": 22, "label": "2-2", "event": "battle_boss_win_rank_s" }, { "mapId": 72, "label": "7-2-2", "event": "battle_boss_win_rank_s" }, { "mapId": 51, "label": "5-1", "event": "battle_boss_win_rank_s" }, { "mapId": 64, "label": "6-4", "event": "battle_boss_win_rank_s" }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [588, 667, 469, 587] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "山風改二/丁・江風改二・海風改二から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 961, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B174",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [670] }, "min": 1 }, { "selector": { "masterIds": [568] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "親潮改二・黒潮改二" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 966, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B175",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-1", "mapId": 21 }, { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23 }, { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73 }, { "event": "sally", "label": "7-4 O", "mapId": 74, "mapNodes": ["O"], "raw": "7-4 Oマス到達x1" }],
+        "costs": [{ "kind": "use-item", "useItemId": 73, "quantity": 1, "operation": "consume", "timing": "quest-completion", "label": "設営隊", "raw": "設営隊x1を任務達成時に消費" }]
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 967, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B176", "objectives": [{ "event": "map_gauge_destroy", "label": "7-4ゲージ撃破", "mapId": 74, "raw": "7-4のゲージ撃破（撃破後受諾でも達成可）" }] } },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 969, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B178",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73 }, { "event": "battle_boss_win_rank_s", "label": "5-1", "mapId": 51 }, { "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [903, 908] }, "min": 1 }, { "selector": { "familyIds": [61, 24, 480] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "天霧改二/丁・青葉/大井/狭霧から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 970, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B179",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-4", "mapId": 14 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23 }, { "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [647] }, "min": 1 }, { "selector": { "familyIds": [61] }, "min": 1 }, { "selector": { "familyIds": [113] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "浦波改二・青葉・鬼怒" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 974, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B180", "event": "battle_boss_win_rank_s", "mapIds": [12, 13, 51],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [666] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "磯波改二" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 976, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B181", "event": "battle_boss_win_rank_s", "mapIds": [14, 25, 51, 44],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [911, 916] } }], "groups": [{ "selector": { "typeIds": [3] }, "min": 1 }, { "selector": { "typeIds": [2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "大和改二/重旗艦・軽巡1隻・駆逐艦2隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 978, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B183",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74 }, { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [916] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "大和改二重旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 980, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B184", "event": "battle_boss_win_rank_s", "mapIds": [24, 54, 55, 64],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [915, 670, 568] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "早潮改二・親潮改二・黒潮改二から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 981, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B185",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "classIds": [91, 87] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "Fletcher級/John C.Butler級から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 982, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B186",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-5", "mapId": 15 }, { "event": "sally", "label": "1-6", "mapId": 16 }, { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "3-5", "mapId": 35 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [920] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Samuel B.Roberts Mk.II旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 983, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B187", "event": "battle_boss_win_rank_s", "mapIds": [23, 25, 45, 55],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "familyIds": [544] }, "min": 1 }, { "selector": { "familyIds": [562] }, "min": 1 }, { "selector": { "familyIds": [561] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "Gambier Bay・Johnston・Samuel B.Roberts" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 989, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B188", "event": "battle_boss_win_rank_s", "mapIds": [25, 35, 45, 52, 64, 74],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [894, 899] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "鳳翔改二/改二戦旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 995, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B189",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "3-2", "mapId": 32 }, { "event": "battle_boss_win_rank_s", "label": "5-3", "mapId": 53 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64 }, { "event": "battle_boss_win_rank_s", "label": "7-3-2", "mapId": 73 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [959] }, "min": 1 }, { "selector": { "classIds": [12] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "深雪改二・別の吹雪型1隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 996, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B190",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }, { "event": "battle_boss_win_rank_s", "label": "7-5-3", "mapId": 75 }, { "event": "battle_boss_win_rank_s", "label": "4-3", "mapId": 43 }, { "event": "battle_boss_win_rank_s", "label": "5-3", "mapId": 53 }, { "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [593, 954] }, "min": 1 }, { "selector": { "masterIds": [591] }, "min": 1 }, { "selector": { "typeIds": [2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "榛名改二乙/丙・金剛改二丙・駆逐艦2隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 997, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B191",
+        "conditions": { "op": "any", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [1] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "海防艦3隻以上" } },
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [2] }, "min": 4 }], "forbidden": [], "size": {}, "distinct": true, "label": "駆逐艦4隻以上" } },
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [16] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "水上機母艦2隻以上" } }
+        ] },
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-3", "mapId": 13, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "1-5", "mapId": 15, "count": 2 }, { "event": "sally", "label": "1-6", "mapId": 16, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22, "count": 2 }]
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 998, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B192",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74 }, { "event": "battle_boss_win_rank_s", "label": "4-5", "mapId": 45 }, { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55 }, { "event": "battle_boss_win_rank_s", "label": "6-4", "mapId": 64 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [961] }, "min": 1 }, { "selector": { "familyIds": [42, 632, 633] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "時雨改三・白露/有明/夕暮から1隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 993, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B193", "event": "battle_boss_win_rank_s", "mapIds": [25, 64, 53, 54, 74],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [951] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "天津風改二旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1001, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B194",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23 }, { "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [955, 960] }, "min": 1 }, { "selector": { "familyIds": [49, 425, 183, 64] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "清霜改二/丁・霞/朝霜/大淀/足柄から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1003, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B195", "event": "battle_boss_win_rank_s", "mapIds": [12, 13, 23, 31],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [891, 299] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "Salmon/Scamp旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1004, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B196", "event": "battle_boss_win_rank_s", "mapIds": [23, 24, 45, 64],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [502, 507] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "三隈改二/改二特旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1006, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B197", "event": "battle_boss_win_rank_a", "mapIds": [12, 13, 14, 15],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "familyIds": [44, 45, 405, 46] }, "min": 3, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "村雨・夕立・春雨・五月雨から3隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1007, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B198",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "5-1", "mapId": 51, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [975] } }], "groups": [{ "selector": { "typeIds": [3] }, "min": 1 }, { "selector": { "typeIds": [2] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "春雨改二旗艦・軽巡1隻・駆逐艦1隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1008, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B199", "event": "battle_boss_win_rank_s", "mapIds": [45, 53, 54, 55],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [144] }, "min": 1 }, { "selector": { "masterIds": [975] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "夕立改二・春雨改二" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1014, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B201", "event": "battle_boss_win_rank_a", "mapIds": [11, 12, 15, 21],
+        "conditions": { "op": "any", "children": [
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [1] }, "min": 3 }], "forbidden": [], "size": {}, "distinct": true, "label": "海防艦3隻以上" } },
+          { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [1, 2] }, "min": 4 }], "forbidden": [], "size": {}, "distinct": true, "label": "海防艦/駆逐艦合計4隻以上" } }
+        ] }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1015, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B202", "event": "battle_boss_win_rank_s", "mapIds": [13, 14, 22, 23, 51],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "masterIds": [330, 346, 357, 421, 422, 423, 532, 533, 537, 538, 963, 968, 1041, 1046, 271, 428, 477, 478, 141] }, "min": 3, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "秋月型・摩耶改/改二・天龍改二・龍田改二・五十鈴改二から3隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1016, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B203", "event": "battle_boss_win_rank_s", "mapIds": [24, 35, 74, 54, 55],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [968] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "初月改二旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1017, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B204",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-2", "mapId": 12, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "1-5", "mapId": 15, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "familyIds": [409, 625, 425, 410] } }], "groups": [{ "selector": { "familyIds": [409, 625, 425, 410] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "早霜・秋霜・朝霜・清霜から旗艦1隻＋随伴2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1021, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B206",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25 }, { "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }, { "event": "battle_boss_win_rank_s", "label": "7-4", "mapId": 74 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [956] } }], "groups": [{ "selector": { "familyIds": [410, 625] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "早霜改二旗艦・清霜/秋霜1隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1023, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B207",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }, { "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }, { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [981] } }], "groups": [{ "selector": { "familyIds": [69] }, "min": 1 }, { "selector": { "familyIds": [674, 675, 528, 484] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "藤波改二旗艦・鳥海・玉波/涼波/早波/浜波1隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1025, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B208", "event": "battle_boss_win_rank_s", "mapIds": [23, 25, 43, 53],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [986] } }], "groups": [{ "selector": { "classIds": [12] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "白雪改二旗艦・別の吹雪型1隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1029, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B209",
+        "objectives": [{ "event": "sally", "label": "1-6", "mapId": 16 }, { "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "2-3", "mapId": 23 }, { "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [983] } }], "groups": [{ "selector": { "familyIds": [674, 675, 485, 528, 425] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "浜波改二旗艦・玉波/涼波/藤波/早波/朝霜から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1033, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B210", "event": "battle_boss_win_rank_s", "mapIds": [11, 12, 13, 14],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [945] } }], "groups": [{ "selector": { "typeIds": [3, 4, 21] }, "min": 1 }, { "selector": { "typeIds": [2] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "第百一号輸送艦旗艦・軽巡級1隻・駆逐艦2隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1036, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B211",
+        "objectives": [{ "event": "battle_boss_win_rank_a", "label": "1-2", "mapId": 12, "count": 2 }, { "event": "battle_boss_win_rank_a", "label": "1-3", "mapId": 13, "count": 2 }, { "event": "battle_boss_win_rank_a", "label": "1-4", "mapId": 14, "count": 2 }, { "event": "battle_boss_win_rank_a", "label": "1-5", "mapId": 15, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [], "groups": [{ "selector": { "typeIds": [15, 17, 22] }, "min": 2 }, { "selector": { "typeIds": [1] }, "min": 2 }], "forbidden": [], "size": {}, "distinct": true, "label": "揚陸艦/補給艦計2隻・海防艦2隻以上" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1010, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B212",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "1-4", "mapId": 14 }, { "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }, { "event": "battle_boss_win_rank_s", "label": "7-1", "mapId": 71 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }, { "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [963] } }], "groups": [], "forbidden": [], "size": {}, "distinct": true, "label": "秋月改二旗艦" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1041, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B213",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "2-2", "mapId": 22 }, { "event": "battle_boss_win_rank_s", "label": "2-4", "mapId": 24 }, { "event": "battle_boss_win_rank_s", "label": "2-5", "mapId": 25 }, { "event": "battle_boss_win_rank_s", "label": "7-1", "mapId": 71 }, { "event": "battle_boss_win_rank_s", "label": "7-2-2", "mapId": 72 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [982] } }], "groups": [{ "selector": { "familyIds": [674, 675, 485, 484] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "早波改二旗艦・玉波/涼波/藤波/浜波から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1042, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B214", "event": "battle_boss_win_rank_s", "mapIds": [25, 35, 45, 55, 64],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [1031] } }], "groups": [{ "selector": { "familyIds": [453, 674, 675, 485, 528, 484] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "飛龍改三旗艦・風雲/三十二駆から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1044, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B215", "event": "battle_boss_win_rank_s", "mapIds": [23, 25, 45, 55, 63],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [1033] } }], "groups": [{ "selector": { "familyIds": [485] }, "min": 1 }], "forbidden": [], "size": {}, "distinct": true, "label": "玉波改二旗艦・藤波" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 1047, "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": { "manualSortie": { "field": "任務/出撃任務#id-B216",
+        "objectives": [{ "event": "battle_boss_win_rank_s", "label": "5-4", "mapId": 54, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "5-5", "mapId": 55, "count": 2 }, { "event": "battle_boss_win_rank_s", "label": "5-6-3", "mapId": 56, "count": 2 }],
+        "conditions": { "op": "predicate", "predicate": { "kind": "fleet", "positions": [{ "role": "flagship", "selector": { "masterIds": [1034, 745] } }], "groups": [{ "selector": { "familyIds": [69, 124, 70, 138, 674, 485, 528] }, "min": 2, "distinctBy": "family" }], "forbidden": [], "size": {}, "distinct": true, "label": "涼波改二/補旗艦・指定7隻から2隻" } }
+      } }, "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 718,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet", "positions": [],
+            "groups": [{ "selector": { "classIds": [9] }, "min": 1 }],
+            "forbidden": [], "size": {}, "distinct": true, "label": "最上型"
+          },
+          "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10", "raw": "「最上型」を近代化改修" }]
+        },
+        "objectives": [{
+          "id": "objective-wiki-1", "event": "remodel_ship", "label": "最上型近代化改修",
+          "count": { "required": 2, "initial": 0 },
+          "target": { "mapIds": [], "mapNodes": [], "missionIds": [], "enemyShipTypeIds": [], "executionCounts": [], "batch": true },
+          "constraints": {
+            "op": "predicate",
+            "predicate": {
+              "kind": "fleet", "positions": [],
+              "groups": [{ "selector": { "classIds": [9] }, "min": 1 }],
+              "forbidden": [], "size": {}, "distinct": true, "label": "最上型"
+            },
+            "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10" }]
+          },
+          "completion": {
+            "logic": "count", "eventKey": "remodel_ship", "automatic": false,
+            "reason": "conditional-modernization-event-mapping-not-verified", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10" }]
+          },
+          "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10", "raw": "[軽巡級]x3隻同時使用で2回成功" }]
+        }],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1"], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10" }]
+        },
+        "costs": [
+          { "id": "cost-wiki-ammo", "kind": "resource", "resource": "ammo", "quantity": 1100, "operation": "consume", "timing": "quest-completion", "label": "弾薬", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10", "raw": "弾薬 -1,100" }] },
+          { "id": "cost-wiki-steel", "kind": "resource", "resource": "steel", "quantity": 1100, "operation": "consume", "timing": "quest-completion", "label": "鋼材", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10", "raw": "鋼材 -1,100" }] },
+          { "id": "cost-wiki-material-ships", "kind": "ship", "selector": { "typeIds": [3, 4, 21] }, "quantity": 3, "operation": "consume", "timing": "per-execution", "label": "軽巡級", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G10", "raw": "[軽巡級]x3隻同時使用" }] }
+        ],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 719,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet", "positions": [],
+            "groups": [{ "selector": { "classIds": [9] }, "min": 1 }],
+            "forbidden": [], "size": {}, "distinct": true, "label": "最上型"
+          },
+          "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11", "raw": "「最上型」を近代化改修" }]
+        },
+        "objectives": [{
+          "id": "objective-wiki-1", "event": "remodel_ship", "label": "最上型近代化改修",
+          "count": { "required": 2, "initial": 0 },
+          "target": { "mapIds": [], "mapNodes": [], "missionIds": [], "enemyShipTypeIds": [], "executionCounts": [], "batch": true },
+          "constraints": {
+            "op": "predicate",
+            "predicate": {
+              "kind": "fleet", "positions": [],
+              "groups": [{ "selector": { "classIds": [9] }, "min": 1 }],
+              "forbidden": [], "size": {}, "distinct": true, "label": "最上型"
+            },
+            "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11" }]
+          },
+          "completion": {
+            "logic": "count", "eventKey": "remodel_ship", "automatic": false,
+            "reason": "conditional-modernization-event-mapping-not-verified", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11" }]
+          },
+          "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11", "raw": "[重巡級]x4隻同時使用で2回成功" }]
+        }],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1"], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11" }]
+        },
+        "costs": [
+          { "id": "cost-wiki-ammo", "kind": "resource", "resource": "ammo", "quantity": 1200, "operation": "consume", "timing": "quest-completion", "label": "弾薬", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11", "raw": "弾薬 -1,200" }] },
+          { "id": "cost-wiki-steel", "kind": "resource", "resource": "steel", "quantity": 1200, "operation": "consume", "timing": "quest-completion", "label": "鋼材", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11", "raw": "鋼材 -1,200" }] },
+          { "id": "cost-wiki-material-ships", "kind": "ship", "selector": { "typeIds": [5, 6] }, "quantity": 4, "operation": "consume", "timing": "per-execution", "label": "重巡級", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/改装任務#id-G11", "raw": "[重巡級]x4隻同時使用" }] }
+        ],
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "costs": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 443,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all", "children": [], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D39" }]
+        },
+        "objectives": [{
+          "id": "objective-wiki-1", "event": "mission_success", "label": "潜水艦派遣作戦",
+          "count": { "required": 2, "initial": 0 },
+          "target": { "mapIds": [], "mapNodes": [], "missionIds": ["30"], "enemyShipTypeIds": [], "executionCounts": [] },
+          "constraints": {
+            "op": "all", "children": [], "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D39" }]
+          },
+          "completion": {
+            "logic": "count", "eventKey": "mission_success@30", "automatic": false,
+            "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified",
+            "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D39" }]
+          },
+          "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D39", "raw": "潜水艦派遣作戦を2回成功" }]
+        }],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1"], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D39" }]
+        },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 445,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all", "children": [], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }]
+        },
+        "objectives": [
+          { "id": "objective-wiki-1", "event": "mission_success", "label": "海上護衛任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["5"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@5", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "海上護衛任務を1回成功" }] },
+          { "id": "objective-wiki-2", "event": "mission_success", "label": "兵站強化任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["100"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@100", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "兵站強化任務を1回成功" }] },
+          { "id": "objective-wiki-3", "event": "mission_success", "label": "タンカー護衛任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["9"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@9", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "タンカー護衛任務を1回成功" }] },
+          { "id": "objective-wiki-4", "event": "mission_success", "label": "航空機輸送作戦", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["18"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@18", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "航空機輸送作戦を1回成功" }] },
+          { "id": "objective-wiki-5", "event": "mission_success", "label": "水上機基地建設", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["36"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@36", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "水上機基地建設を1回成功" }] },
+          { "id": "objective-wiki-6", "event": "mission_success", "label": "水上機前線輸送", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["40"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@40", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "水上機前線輸送を1回成功" }] },
+          { "id": "objective-wiki-7", "event": "mission_success", "label": "ボーキサイト船団護衛", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["45"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "completion": { "logic": "count", "eventKey": "mission_success@45", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41", "raw": "ボーキサイト船団護衛を1回成功" }] }
+        ],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1", "objective-wiki-2", "objective-wiki-3", "objective-wiki-4", "objective-wiki-5", "objective-wiki-6", "objective-wiki-7"],
+          "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D41" }]
+        },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 446,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all", "children": [], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }]
+        },
+        "objectives": [
+          { "id": "objective-wiki-1", "event": "mission_success", "label": "警備任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["3"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "completion": { "logic": "count", "eventKey": "mission_success@3", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42", "raw": "警備任務を1回成功" }] },
+          { "id": "objective-wiki-2", "event": "mission_success", "label": "対潜警戒任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["4"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "completion": { "logic": "count", "eventKey": "mission_success@4", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42", "raw": "対潜警戒任務を1回成功" }] },
+          { "id": "objective-wiki-3", "event": "mission_success", "label": "海上護衛任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["5"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "completion": { "logic": "count", "eventKey": "mission_success@5", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42", "raw": "海上護衛任務を1回成功" }] },
+          { "id": "objective-wiki-4", "event": "mission_success", "label": "海峡警備行動", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["101"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "completion": { "logic": "count", "eventKey": "mission_success@101", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42", "raw": "海峡警備行動を1回成功" }] },
+          { "id": "objective-wiki-5", "event": "mission_success", "label": "兵站強化任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["100"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "completion": { "logic": "count", "eventKey": "mission_success@100", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42", "raw": "兵站強化任務を1回成功" }] }
+        ],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1", "objective-wiki-2", "objective-wiki-3", "objective-wiki-4", "objective-wiki-5"],
+          "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D42" }]
+        },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 447,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "all", "children": [], "confidence": "verified",
+          "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }]
+        },
+        "objectives": [
+          { "id": "objective-wiki-1", "event": "mission_success", "label": "対潜警戒任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["4"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "completion": { "logic": "count", "eventKey": "mission_success@4", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43", "raw": "対潜警戒任務を1回成功" }] },
+          { "id": "objective-wiki-2", "event": "mission_success", "label": "海上護衛任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["5"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "completion": { "logic": "count", "eventKey": "mission_success@5", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43", "raw": "海上護衛任務を1回成功" }] },
+          { "id": "objective-wiki-3", "event": "mission_success", "label": "タンカー護衛任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["9"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "completion": { "logic": "count", "eventKey": "mission_success@9", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43", "raw": "タンカー護衛任務を1回成功" }] },
+          { "id": "objective-wiki-4", "event": "mission_success", "label": "兵站強化任務", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["100"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "completion": { "logic": "count", "eventKey": "mission_success@100", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43", "raw": "兵站強化任務を1回成功" }] },
+          { "id": "objective-wiki-5", "event": "mission_success", "label": "南西方面航空偵察作戦", "count": { "required": 1, "initial": 0 }, "target": { "mapIds": [], "mapNodes": [], "missionIds": ["110"], "enemyShipTypeIds": [], "executionCounts": [] }, "constraints": { "op": "all", "children": [], "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "completion": { "logic": "count", "eventKey": "mission_success@110", "automatic": false, "reason": "wiki-rule-has-no-verified-poi-event-mapping", "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }] }, "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43", "raw": "南西方面航空偵察作戦を1回成功" }] }
+        ],
+        "completion": {
+          "logic": "all", "objectiveIds": ["objective-wiki-1", "objective-wiki-2", "objective-wiki-3", "objective-wiki-4", "objective-wiki-5"],
+          "confidence": "verified", "sourceRefs": [{ "source": "艦隊これくしょん -艦これ- 攻略 Wiki", "field": "任務/遠征任務#id-D43" }]
+        },
+        "unresolved": []
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "parsed" }
+    },
+    {
+      "id": 346,
+      "sources": ["kcQuests", "poi", "Kcanotify game data", "艦隊これくしょん -艦これ- 攻略 Wiki"],
+      "requirements": {
+        "conditions": {
+          "op": "predicate",
+          "predicate": {
+            "kind": "fleet",
+            "positions": [],
+            "groups": [
+              { "selector": { "masterIds": [542] }, "min": 1, "max": 1 },
+              { "selector": { "masterIds": [563] }, "min": 1, "max": 1 },
+              { "selector": { "masterIds": [564] }, "min": 1, "max": 1 },
+              { "selector": { "masterIds": [648] }, "min": 1, "max": 1 }
+            ],
+            "forbidden": [],
+            "size": { "min": 4, "max": 6 },
+            "distinct": true,
+            "label": "夕云改二、卷云改二、风云改二、秋云改二各1艘"
+          },
+          "confidence": "verified",
+          "sourceRefs": [{
+            "source": "艦隊これくしょん -艦これ- 攻略 Wiki",
+            "field": "任務/演習任務#id-Cy2#conditions",
+            "raw": "夕雲改二・巻雲改二・風雲改二・秋雲改二を各1隻含む艦隊"
+          }]
+        },
+        "objectiveOverrides": {
+          "objective-1": { "constraints": "$conditions" }
+        }
+      },
+      "confidence": { "conditions": "verified", "objectives": "verified", "overall": "verified" }
+    }
+  ]
+}

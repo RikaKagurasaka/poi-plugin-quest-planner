@@ -1,0 +1,68 @@
+{
+  "name": "poi-plugin-quest-planner",
+  "version": "0.1.0",
+  "description": "任务检索、依赖关系、进度与待做管理",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikaKagurasaka/poi-plugin-quest-planner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RikaKagurasaka/poi-plugin-quest-planner/issues"
+  },
+  "homepage": "https://github.com/RikaKagurasaka/poi-plugin-quest-planner#readme",
+  "files": [
+    "index.js",
+    "logic.js",
+    "domain.js",
+    "requirements-view.js",
+    "assets",
+    "data",
+    "scripts/validate-data.js",
+    "scripts/schema-v4.js",
+    "scripts/build-data.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:data": "node scripts/build-data.js",
+    "validate:data": "node scripts/validate-data.js",
+    "test": "node test.js && npm run validate:data",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "poi-plugin",
+    "kancolle",
+    "quest"
+  ],
+  "author": {
+    "name": "Rika",
+    "url": "https://github.com/RikaKagurasaka"
+  },
+  "license": "MIT",
+  "poiPlugin": {
+    "id": "quest-planner",
+    "title": "任务规划",
+    "description": "任务资料由本插件离线合并维护，参考 kcQuests、kcwiki quest data、Kcanotify、WhoCallsTheFleet DB、攻略 Wiki、tsunkit、poi 内置计数及 poi-plugin-quest-info-2；运行时不访问上游。",
+    "icon": "fa/project-diagram",
+    "priority": 3,
+    "apiVer": {
+      "11.99.99": "0.1.0"
+    }
+  },
+  "dependencies": {
+    "cytoscape": "^3.33.1",
+    "cytoscape-dagre": "^2.5.0",
+    "dagre": "^0.8.5"
+  },
+  "peerDependencies": {
+    "@blueprintjs/core": ">=6.0.0",
+    "react": ">=18.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

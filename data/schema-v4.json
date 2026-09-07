@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/RikaKagurasaka/poi-plugin-quest-planner/schema-v4.json",
+  "title": "poi quest planner data schema v4",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "sources", "catalogVersion", "catalogs", "quests"],
+  "properties": {
+    "schemaVersion": { "const": 4 },
+    "generatedAt": { "type": "string" },
+    "catalogVersion": { "type": "integer", "minimum": 1 },
+    "sources": { "type": "array", "items": { "type": "object" } },
+    "catalogs": {
+      "type": "object",
+      "required": ["ships", "shipGroups", "shipTypes", "shipClasses", "equipment", "equipmentTypes", "useItems", "maps", "missions"]
+    },
+    "quests": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/quest" }
+    }
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "required": ["source", "field"],
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "field": { "type": "string", "minLength": 1 },
+        "raw": { "type": "string" }
+      }
+    },
+    "sourceMeta": {
+      "type": "object",
+      "required": ["confidence", "sourceRefs"],
+      "properties": {
+        "confidence": { "enum": ["exact", "verified", "parsed", "unresolved"] },
+        "sourceRefs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceRef" } }
+      }
+    },
+    "shipSelector": {
+      "type": "object",
+      "properties": {
+        "masterIds": { "type": "array", "items": { "type": "integer" } },
+        "groupIds": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "familyIds": { "type": "array", "items": { "type": "integer" } },
+        "typeIds": { "type": "array", "items": { "type": "integer" } },
+        "classIds": { "type": "array", "items": { "type": "integer" } },
+        "level": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "integer", "minimum": 1 },
+            "max": { "type": ["integer", "null"], "minimum": 1 }
+          }
+        },
+        "speed": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "integer", "minimum": 0 },
+            "exact": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "remodel": {
+          "type": "object",
+          "properties": {
+            "exactMasterIds": { "type": "array", "items": { "type": "integer" } },
+            "allowedMasterIds": { "type": "array", "items": { "type": "integer" } },
+            "minimumStage": { "type": "integer", "minimum": 0 },
+            "beforeStage": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+    "predicate": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "enum": ["fleet", "equipment", "resource", "use-item", "map"] },
+        "positions": { "type": "array" },
+        "groups": { "type": "array" },
+        "forbidden": { "type": "array", "items": { "$ref": "#/$defs/shipSelector" } },
+        "selector": { "type": "object" },
+        "quantity": { "type": "integer", "minimum": 1 },
+        "placement": {
+          "type": "object",
+          "properties": {
+            "role": { "enum": ["ship", "flagship", "secretary"] },
+            "location": { "const": "not-airbase" },
+            "shipSelector": { "$ref": "#/$defs/shipSelector" },
+            "slotIndex": { "type": "integer", "minimum": 0 },
+            "mustBeCurrentlyEquipped": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "expression": {
+      "allOf": [
+        { "$ref": "#/$defs/sourceMeta" },
+        {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": ["op", "children"],
+              "properties": {
+                "op": { "enum": ["all", "any"] },
+                "children": { "type": "array", "items": { "$ref": "#/$defs/expression" } }
+              }
+            },
+            {
+              "type": "object",
+              "required": ["op", "count", "children"],
+              "properties": {
+                "op": { "const": "atLeast" },
+                "count": { "type": "integer", "minimum": 1 },
+                "children": { "type": "array", "items": { "$ref": "#/$defs/expression" } }
+              }
+            },
+            {
+              "type": "object",
+              "required": ["op", "child"],
+              "properties": {
+                "op": { "const": "not" },
+                "child": { "$ref": "#/$defs/expression" }
+              }
+            },
+            {
+              "type": "object",
+              "required": ["op", "predicate"],
+              "properties": {
+                "op": { "const": "predicate" },
+                "predicate": { "$ref": "#/$defs/predicate" }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "quest": {
+      "type": "object",
+      "required": ["id", "code", "category", "repeat", "name", "detail", "note", "rewardText", "dependencies", "requirements", "rewards", "tracking", "sources", "confidence"],
+      "properties": {
+        "id": { "type": "integer" },
+        "code": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "detail": { "type": "string" },
+        "note": { "type": "string" },
+        "rewardText": { "type": "string" },
+        "dependencies": {
+          "type": "object",
+          "required": ["questIds", "unresolved", "ignored"],
+          "properties": {
+            "questIds": { "type": "array", "items": { "type": "integer" } },
+            "unresolved": { "type": "array" },
+            "ignored": { "type": "array" }
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "required": ["conditions", "objectives", "completion", "costs", "unresolved"],
+          "properties": {
+            "conditions": { "$ref": "#/$defs/expression" },
+            "objectives": { "type": "array" },
+            "completion": { "type": "object" },
+            "costs": { "type": "array" },
+            "unresolved": { "type": "array" }
+          }
+        },
+        "rewards": {
+          "type": "object",
+          "required": ["entries", "choices", "unresolved"],
+          "properties": {
+            "entries": { "type": "array" },
+            "choices": { "type": "array" },
+            "unresolved": { "type": "array" }
+          }
+        }
+      }
+    }
+  }
+}
